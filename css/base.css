@@ -1,0 +1,103 @@
+/* ============================================== */
+/* 1. CSS 리셋(Reset) 및 초기화 */
+/* ============================================== */
+/* 모든 브라우저의 기본 여백 및 패딩 제거 */
+*,
+*::before,
+*::after {
+    /* Box Sizing: 레이아웃 계산을 직관적으로 만듦 (현대 웹 개발의 필수 요소) */
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+/* HTML5의 새로운 요소들을 블록 레벨 요소로 설정 */
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+/* 이미지 및 비디오의 반응형 설정 */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%; /* 이미지가 부모 요소를 벗어나지 않도록 설정 */
+    height: auto;
+}
+
+/* 폼 요소의 기본 스타일 재설정 */
+input,
+button,
+textarea,
+select {
+    font: inherit; /* 폼 요소가 body의 폰트 설정을 상속받도록 함 */
+}
+
+/* 스크롤 행동 정의 (부드러운 스크롤 효과) */
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%; /* 모바일에서 텍스트 크기 자동 조정 방지 */
+}
+
+
+/* ============================================== */
+/* 2. 전역 기본 스타일 및 타이포그래피 */
+/* ============================================== */
+
+/* 문서의 기본 폰트 및 폰트 크기 설정 */
+body {
+    /* 기본 폰트 크기 (1rem = 16px) */
+    font-size: 100%; 
+    line-height: 1.6;
+    /* 한국어 웹에 적합한 폰트 스택 (Mac/Windows/Mobile 모두 고려) */
+    font-family: 'Nanum Gothic', sans-serif;
+    /* 폰트 렌더링 최적화 (가독성 향상) */
+    text-rendering: optimizeLegibility; 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+    /* 웹 접근성(WCAG)을 위한 기본 색상 설정 */
+    color: #333333; 
+    background-color: #ffffff;
+}
+
+/* 앵커 태그 스타일 */
+a {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: inherit;
+    text-decoration: none; /* 기본 밑줄 제거 */
+}
+a:hover {
+    text-decoration: underline; /* 호버 시 밑줄 추가 (접근성 및 사용성) */
+}
+
+/* 목록 스타일 제거 */
+ul, ol {
+    list-style: none;
+}
+
+/* 제목 태그의 기본 스타일 (시맨틱하게 사용하도록 유도) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+/* ============================================== */
+/* 3. 웹 접근성 및 기타 유틸리티 */
+/* ============================================== */
+
+/* 시각적으로 숨기지만 스크린 리더는 읽을 수 있게 처리 (접근성) */
+.a11y-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
