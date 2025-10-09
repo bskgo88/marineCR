@@ -18,25 +18,25 @@
 <body>
   <header class="header">
     <div class="header-inner">
-        <h1 class="logo">
-          <a href="#"><img src="images/base/logo.jpg"></a>
-        </h1>
-        <nav class="gnb">
-          <ul>
-              <li><a href="#">병과</a></li>
-              <li><a href="#">부사관</a></li>
-              <li><a href="#">장교</a></li>
-              <li><a href="#">군무원</a></li>
-              <li><a href="#">학군사관</a></li>
-              <li><a href="#">병력동원훈련</a></li>
-              <li><a href="#">커뮤니티</a></li>
-          </ul>
-        </nav>
-        <button class="menu-toggle" aria-label="전체 메뉴 열기">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </button>
+      <h1 class="logo">
+        <a href="#"><img src="images/base/logo.jpg"></a>
+      </h1>
+      <nav class="gnb">
+        <ul>
+            <li><a href="#">병과</a></li>
+            <li><a href="#">부사관</a></li>
+            <li><a href="#">장교</a></li>
+            <li><a href="#">군무원</a></li>
+            <li><a href="#">학군사관</a></li>
+            <li><a href="#">병력동원훈련</a></li>
+            <li><a href="#">커뮤니티</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="전체 메뉴 열기">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
     </div>
   </header>
 
@@ -47,33 +47,43 @@
           <li><img src="images/slide/img1.png"></li>
           <li><img src="images/slide/img1.png"></li>
         </ul>
+        <button class="slideToggle">버튼</button>
       </div>
-      <script>
-        $('.single-item').slick();
-      </script>
-      
-      <div class="main-title-box">
-        <div class="emblem"></div>
-        <h2>대한민국 해병대 모집</h2>
-        <p>단 한 번의 선택이 만드는 영원한 자부심</p>
-        <div class="search-area">
-            <input type="text" placeholder="검색어를 입력해주세요.">
-            <button type="button">검색</button>
-        </div>
-      </div>
+    </section>
+
+    <script>
+      $('.single-item').slick({
+        dots: true,
+        autoplay: true,
+      });
+
+      $('.slideToggle').on('click', function() {
+        if ($(this).hasClass('is-playing')) {
+          $('.single-item').slick('slickPause');
+          $(this).text('자동 재생 시작').removeClass('is-playing').addClass('is-paused');
+        } else {
+          $('.single-item').slick('slickPlay');
+          $(this).text('자동 재생 일시 정지').removeClass('is-paused').addClass('is-playing');
+        }
+      });
+    </script>
+
+    <section class="search-area">
+      <input type="text" placeholder="검색어를 입력해주세요.">
+      <button type="button">검색</button>
     </section>
 
     <section class="quick-links">
       <ul class="link-grid">
-          <li class="notice"><a href="#">모집공고</a></li>
-          <li class="pass"><a href="#">합격자 공고</a></li>
-          <li class="write"><a href="#">지원서 작성</a></li>
-          <li class="room"><a href="#">자료실</a></li>
-          <li class="history"><a href="#">병무이력</a></li>
-          <li class="search"><a href="#">합격자 조회</a></li>
-          <li class="intro"><a href="#">병과 소개</a></li>
-          <li class="faq"><a href="#">자주하는 질문</a></li>
-          <li class="qna"><a href="#">질문과 답변</a></li>
+        <li class="notice"><a href="#">모집공고</a></li>
+        <li class="pass"><a href="#">합격자 공고</a></li>
+        <li class="write"><a href="#">지원서 작성</a></li>
+        <li class="room"><a href="#">자료실</a></li>
+        <li class="history"><a href="#">병무이력</a></li>
+        <li class="search"><a href="#">합격자 조회</a></li>
+        <li class="intro"><a href="#">병과 소개</a></li>
+        <li class="faq"><a href="#">자주하는 질문</a></li>
+        <li class="qna"><a href="#">질문과 답변</a></li>
       </ul>
     </section>
 
@@ -81,16 +91,16 @@
       <div class="content-box notice-board">
           <h3>공지사항</h3>
           <ul>
-              <li>25년도 군 가산복무지원금 지급, 유사자격 취소 공지 <span>+</span></li>
-              <li>25년도 군 가산복무지원금 지급, 유사자격 취소 공지 <span>+</span></li>
-              </ul>
+            <li>25년도 군 가산복무지원금 지급, 유사자격 취소 공지 <span>+</span></li>
+            <li>25년도 군 가산복무지원금 지급, 유사자격 취소 공지 <span>+</span></li>
+          </ul>
       </div>
       <div class="content-box news-board">
           <h3>해병대 뉴스</h3>
           <ul>
-              <li>전투복 혁신으로 달라진 포브스... 볼 게 저는 자신감 <span>+</span></li>
-              <li>강인한 늠름함으로 호미담 조절을... 볼 게 저는 자신감 <span>+</span></li>
-              </ul>
+            <li>전투복 혁신으로 달라진 포브스... 볼 게 저는 자신감 <span>+</span></li>
+            <li>강인한 늠름함으로 호미담 조절을... 볼 게 저는 자신감 <span>+</span></li>
+          </ul>
       </div>
     </section>
 
