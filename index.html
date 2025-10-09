@@ -7,11 +7,116 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="./css/base.css" rel="stylesheet">
+  <link href="./css/design.css" rel="stylesheet">
+  <link href="./css/slick.css" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="./js/slick.js"></script>
 </head>
 <body>
-  기본값
+  <header class="header">
+    <div class="header-inner">
+        <h1 class="logo">
+          <a href="#"><img src="images/base/logo.jpg"></a>
+        </h1>
+        <nav class="gnb">
+          <ul>
+              <li><a href="#">병과</a></li>
+              <li><a href="#">부사관</a></li>
+              <li><a href="#">장교</a></li>
+              <li><a href="#">군무원</a></li>
+              <li><a href="#">학군사관</a></li>
+              <li><a href="#">병력동원훈련</a></li>
+              <li><a href="#">커뮤니티</a></li>
+          </ul>
+        </nav>
+        <button class="menu-toggle" aria-label="전체 메뉴 열기">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="main-visual">
+      <div class="slide-wrap">
+        <ul class="single-item">
+          <li><img src="images/slide/img1.png"></li>
+          <li><img src="images/slide/img1.png"></li>
+        </ul>
+      </div>
+      <script>
+        $('.single-item').slick();
+      </script>
+      
+      <div class="main-title-box">
+        <div class="emblem"></div>
+        <h2>대한민국 해병대 모집</h2>
+        <p>단 한 번의 선택이 만드는 영원한 자부심</p>
+        <div class="search-area">
+            <input type="text" placeholder="검색어를 입력해주세요.">
+            <button type="button">검색</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-links">
+      <ul class="link-grid">
+          <li class="notice"><a href="#">모집공고</a></li>
+          <li class="pass"><a href="#">합격자 공고</a></li>
+          <li class="write"><a href="#">지원서 작성</a></li>
+          <li class="room"><a href="#">자료실</a></li>
+          <li class="history"><a href="#">병무이력</a></li>
+          <li class="search"><a href="#">합격자 조회</a></li>
+          <li class="intro"><a href="#">병과 소개</a></li>
+          <li class="faq"><a href="#">자주하는 질문</a></li>
+          <li class="qna"><a href="#">질문과 답변</a></li>
+      </ul>
+    </section>
+
+    <section class="board-section">
+      <div class="content-box notice-board">
+          <h3>공지사항</h3>
+          <ul>
+              <li>25년도 군 가산복무지원금 지급, 유사자격 취소 공지 <span>+</span></li>
+              <li>25년도 군 가산복무지원금 지급, 유사자격 취소 공지 <span>+</span></li>
+              </ul>
+      </div>
+      <div class="content-box news-board">
+          <h3>해병대 뉴스</h3>
+          <ul>
+              <li>전투복 혁신으로 달라진 포브스... 볼 게 저는 자신감 <span>+</span></li>
+              <li>강인한 늠름함으로 호미담 조절을... 볼 게 저는 자신감 <span>+</span></li>
+              </ul>
+      </div>
+    </section>
+
+    <section class="media-section">
+        <div class="media-left">
+            <img src="path/to/media_left_banner.png" alt="국방력 평가 방식 변경 안내">
+        </div>
+        <div class="media-right">
+            <div class="video-thumbnail">
+                <p>나는 해병이다</p>
+                <span class="play-icon">▶</span>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-info">
+          <p>대한민국 해병대 | Copyright © by Republic of Korea Marine Corps. all Rights Reserved.</p>
+      </div>
+      <div class="social-links">
+        <a href="#"></a>
+        <a href="#"></a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

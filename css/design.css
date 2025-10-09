@@ -1,0 +1,150 @@
+/* ============================================== */
+/* 중앙 정렬을 위한 핵심 설정 */
+/* ============================================== */
+
+/* 페이지 전체 컨테이너 설정 */
+.container {
+    /* 1920px 초과 시 중앙 정렬 */
+    max-width: 1920px; 
+    margin: 0 auto; 
+    padding: 0 10px; /* 양쪽에 약간의 여백 추가 (필요시 조정) */
+}
+
+/* 내부 콘텐츠를 1200px (예시)로 제한하여 중앙에 배치하는 경우 */
+.header-inner,
+.footer-inner,
+.quick-links,
+.board-section,
+.media-section {
+    max-width: 1200px; /* 콘텐츠 영역의 최대 너비 */
+    margin: 0 auto;
+}
+
+/* ============================================== */
+/* 1. Header 스타일 */
+/* ============================================== */
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px; /* 헤더 높이 예시 */
+}
+
+/* GNB 메뉴 스타일 (수평 정렬) */
+.gnb ul {
+    display: flex;
+    gap: 30px; /* 메뉴 항목 간 간격 */
+}
+
+/* 햄버거 버튼 스타일 */
+.menu-toggle {
+  display:flex;
+}
+
+/* ============================================== */
+/* 2. Main Visual 및 제목 섹션 */
+/* ============================================== */
+.main-visual {
+    /* 배경 이미지는 CSS의 background-image로 처리 (반응형 대비) */
+    position: relative;
+    /* 슬라이더 높이에 따라 높이 설정 필요 */
+    height: 500px; 
+    overflow: hidden;
+}
+
+/* 메인 제목 박스 (붉은색 영역) */
+.main-title-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #8c001a; /* 해병대 상징색 (어두운 붉은색) */
+    color: #ffffff;
+    text-align: center;
+    padding: 40px;
+    width: 600px; /* 너비 예시 */
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.main-title-box h2 {
+    /* 무적해병체 또는 Noto Sans KR Black 적용 */
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-weight: 900;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* 검색창 영역 */
+.search-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.search-area input {
+    padding: 10px;
+    border: none;
+    width: 300px;
+}
+.search-area button {
+    background-color: #ffffff;
+    color: #8c001a;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* ============================================== */
+/* 3. Quick Links 및 Board Section */
+/* ============================================== */
+
+/* 퀵 링크 그리드 */
+.quick-links {
+    margin: 40px auto;
+}
+.link-grid {
+    display: grid;
+    /* 3열 레이아웃, 필요시 4열, 5열로 변경 가능 */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 15px;
+    text-align: center;
+}
+
+/* 공지사항/뉴스 레이아웃 */
+.board-section {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.content-box {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+}
+
+/* ============================================== */
+/* 4. Footer 스타일 */
+/* ============================================== */
+.footer {
+    background-color: #333333; /* 어두운 배경색 */
+    color: #cccccc;
+    padding: 20px 0;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+/* 소셜 링크 아이콘 처리 */
+.social-links a {
+    margin-left: 10px;
+    /* 아이콘 이미지 처리 필요 */
+}
