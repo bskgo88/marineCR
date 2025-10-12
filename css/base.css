@@ -35,6 +35,8 @@ select {
     font: inherit; /* 폼 요소가 body의 폰트 설정을 상속받도록 함 */
 }
 
+button {cursor:pointer;}
+
 /* 스크롤 행동 정의 (부드러운 스크롤 효과) */
 html {
     scroll-behavior: smooth;
@@ -69,7 +71,7 @@ a {
     text-decoration: none; /* 기본 밑줄 제거 */
 }
 a:hover {
-    text-decoration: underline; /* 호버 시 밑줄 추가 (접근성 및 사용성) */
+    text-decoration:none; /* 호버 시 밑줄 추가 (접근성 및 사용성) */
 }
 
 /* 목록 스타일 제거 */
