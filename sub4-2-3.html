@@ -173,243 +173,63 @@
   </header>
 
   <main class="container">
-    <section class="main-visual">
-      <div class="slide-wrap">
-        <ul class="single-item">
-          <li><img src="images/slide/img1.png"/></li>
-          <li><img src="images/slide/img1.png"/></li>
-          <li><img src="images/slide/img1.png"/></li>
-        </ul>
-        <div class="mv-btn">
-          <button class="slideToggle is-playing"></button>
-        </div>
-      </div>
+    <section class="sub-visual" style="background-image:url('images/bg/bg.jpg');">
+      <strong class="title">직렬별직무내용</strong>
+      <span class="invigator">HOME / 군무원 / 군무원 소개 / 직렬별직무내용</span>
     </section>
 
-    <script>
-      $('.single-item').slick({
-        dots: true,
-        autoplay: true,
-        arrows: false,
-        appendDots: ".mv-btn",
-      });
-
-      $('.slideToggle').on('click', function() {
-        if ($(this).hasClass('is-playing')) {
-          $('.single-item').slick('slickPause');
-          $(this).removeClass('is-playing').addClass('is-paused');
-        } else {
-          $('.single-item').slick('slickPlay');
-          $(this).removeClass('is-paused').addClass('is-playing');
-        }
-      });
-    </script>
-
-    <section class="search-area">
-      <input type="text" placeholder="검색어를 입력해주세요.">
-      <button type="button"><img src="images/icon/searchBtn.png"/>검색</button>
-    </section>
-
-    <section class="quick-links">
-      <div class="board-box">
-        <ul class="board-tab">
-          <li class="notice active"><a href="#.">모집공고</a></li>
-          <li class="pass"><a href="#.">합격자 공고</a></li>
-        </ul>
-        <div class="board-list">
-          <a href="#." class="board-item">
-            <strong class="title">25년 해병대 전국대 ROTC 학군사관후보생 모집 공고25년 해병대 전국대 ROTC 학군사관후보생 모집 공고</strong>
-            <span class="date">2025-09-06</span>
-          </a>
-          <a href="#." class="board-item">
-            <strong class="title">25년 해병대 전국대 ROTC 학군사관후보생 모집 공고</strong>
-            <span class="date">2025-09-06</span>
-          </a>
-          <a href="#." class="board-item">
-            <strong class="title">25년 해병대 전국대 ROTC 학군사관후보생 모집 공고</strong>
-            <span class="date">2025-09-06</span>
-          </a>
-        </div>
-        <a href="#." class="success-search">
-          <div class="ss-imgbox"><img src="images/bg/search.png"/></div>
-          <div class="ss-introbox">
-            <div class="textbox">
-              <strong class="title">합격자 조회</strong>
-              <span class="text">장교/부사관/병(병무청)</span>
-            </div>
-            <span class="icon"><img src="images/icon/check.png"/></span>
-          </div>
-        </a>
-      </div>
-      <ul class="link-grid">
-        <li class="write unset">
-          <a href="#.">
-            <div class="textbox">
-              <strong class="title">지원서 작성</strong>
-              <span class="text">장교·부사관·병·군무원 지원서 작성 및 지원 내역을 확인해보세요.</span>
-            </div>
-            <span class="icon"><img src="images/icon/write.png"/></span>
-          </a>
-        </li>
-        <li class="room">
-          <a href="#.">
-            <div class="textbox">
-              <strong class="title">자료실</strong>
-              <span class="text">지원서·자기소개 양식 등의 각종 제출 서류 양식을 확인해보세요.</span>
-            </div>
-            <span class="icon"><img src="images/icon/download.png"/></span>
-          </a>
-        </li>
-        <li class="history unset">
-          <a href="#.">
-            <div class="textbox">
-              <strong class="title">모병문의처</strong>
-              <span class="text">문의사항이 있을 시 지역별 주소와 연락처 확인 후 해당하는 문의처로 문의 바랍니다.</span>
-            </div>
-            <span class="icon"><img src="images/icon/call.png"/></span>
-          </a>
-        </li>
-        <li class="intro">
-          <a href="#.">
-            <div class="textbox">
-              <strong class="title">병과 소개</strong>
-              <span class="text">문의사항이 있을 시 지역별 주소와 연락처 확인 후 해당하는 문의처로 문의 바랍니다.</span>
-            </div>
-            <span class="icon"><img src="images/icon/intro.png"/></span>
-          </a>
-        </li>
-        <li class="faq unset">
-          <a href="#.">
-            <div class="textbox">
-              <strong class="title">자주하는 질문</strong>
-              <span class="text">문의사항이 있을 시 지역별 주소와 연락처 확인 후 해당하는 문의처로 문의 바랍니다.</span>
-            </div>
-            <span class="icon"><img src="images/icon/qna.png"/></span>
-          </a>
-        </li>
-        <li class="qna">
-          <a href="#.">
-            <div class="textbox">
-              <strong class="title">질문과 답변</strong>
-              <span class="text">문의사항이 있을 시 지역별 주소와 연락처 확인 후 해당하는 문의처로 문의 바랍니다.</span>
-            </div>
-            <span class="icon"><img src="images/icon/faq.png"/></span>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="board-section">
-      <div class="board-insection">
-        <div class="content-box notice-board">
-            <div class="bs-title">
-              <strong class="title">공지사항</strong>
-              <a href="#." class="btn">더보기</a>
-            </div>
-            <div class="bs-list">
-              <a href="#." class="bs-item">
-                <div class="textbox">
-                  <strong class="title">25년도 군 가산복무지원금 지급, 유사자격 취소 공지 25년도 군 가산복무지원금 지급, 유사자격 취소 공지</strong>
-                  <span class="date">2025.09.10</span>
-                </div>
-                <span class="icon"></span>
-              </a>
-              <a href="#." class="bs-item">
-                <div class="textbox">
-                  <strong class="title">25년도 군 가산복무지원금 지급, 유사자격 취소 공지</strong>
-                  <span class="date">2025.09.10</span>
-                </div>
-                <span class="icon"></span>
-              </a>
-              <a href="#." class="bs-item">
-                <div class="textbox">
-                  <strong class="title">25년도 군 가산복무지원금 지급, 유사자격 취소 공지</strong>
-                  <span class="date">2025.09.10</span>
-                </div>
-                <span class="icon"></span>
-              </a>
-            </div>
-        </div>
-        <div class="content-box news-board">
-            <div class="bs-title">
-              <strong class="title">해병대 뉴스</strong>
-              <a href="#." class="btn">더보기</a>
-            </div>
-            <div class="bs-list">
-              <a href="#." class="bs-item">
-                <div class="textbox">
-                  <strong class="title">전투복 혁신으로 달라진 포브스... 볼 게 저는 자신감 전투복 혁신으로 달라진 포브스... 볼 게 저는 자신감</strong>
-                  <span class="date">2025.09.10</span>
-                </div>
-                <span class="icon"></span>
-              </a>
-              <a href="#." class="bs-item">
-                <div class="textbox">
-                  <strong class="title">전투복 혁신으로 달라진 포브스... 볼 게 저는 자신감</strong>
-                  <span class="date">2025.09.10</span>
-                </div>
-                <span class="icon"></span>
-              </a>
-              <a href="#." class="bs-item">
-                <div class="textbox">
-                  <strong class="title">전투복 혁신으로 달라진 포브스... 볼 게 저는 자신감</strong>
-                  <span class="date">2025.09.10</span>
-                </div>
-                <span class="icon"></span>
-              </a>
-            </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="media-section">
-      <div class="media-left">
-        <div class="ms-title">
-          <strong class="title">팝업존</strong>
-          <div class="ms-btn">
-            <button class="pi-prev"><img src="images/icon/prev.png"/></button>
-            <button class="popupToggle is-playing"></button>
-            <button class="pi-next"><img src="images/icon/next.png"/></button>
-          </div>
-        </div>
-        <div class="ms-cont">
-          <ul class="popup-item">
-            <li><img src="images/slide/img2.png" alt="국방력 평가 방식 변경 안내"></li>
-            <li><img src="images/slide/img2.png" alt="국방력 평가 방식 변경 안내"></li>
+    <section class="sub-container">
+      <div class="sub-inner">
+        <div class="sub-nav">
+          <strong class="title">군무원</strong>
+          <ul class="sub-nlist">
+            <li><a href="sub4-1.html">군무원 소개</a></li>
+            <li class="active">
+              <a href="sub4-2.html">채용 정보</a>
+              <ul class="subin-nlist">
+                <li><a href="sub4-2.html">채용시기 및 기준</a></li>
+                <li><a href="sub4-2-2.html">직급별시험과목</a></li>
+                <li class="active"><a href="sub4-2-3.html">직렬별직무내용</a></li>
+                <li><a href="sub4-2-4.html">직렬별자격증</a></li>
+                <li><a href="sub4-2-5.html">직급표</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
-      </div>
-      <div class="media-right">
-        <iframe
-          src="https://www.youtube.com/embed/4soWoPLVSgU"
-          title="[나는 해병이다] 해병대 모병관편"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen
-        >
-        </iframe>
+        <div class="sub-inbox">
+          <strong class="stitle">※ 직렬별 직무내용 정보입니다.</strong>
+          <div class="sub-set">
+            <div class="tabBox">
+              <ul class="tabList">
+                <li class="tabitem active"><span>일반군무원</span></li>
+                <li class="tabitem"><span>기능군무원</span></li>
+                <li class="tabitem"><span>기타군무원</span></li>
+              </ul>
+              <div class="tabCont">
+                <div class="tabContIn active">
+                  <div class="imgbox">
+                    <img src="images/test/sub4-2-3-1.png"/>
+                  </div>
+                </div>
+                <div class="tabContIn">
+                  <div class="imgbox">
+                    <img src="images/test/sub4-2-3-2.png"/>
+                  </div>
+                </div>
+                <div class="tabContIn">
+                  <strong class="tbTitle">▶ 기타군무원 직렬별 직무내용</strong>
+                  <div class="tbInBox">
+                    <p class="tbitem st">- 별정군무원 : 일반군무원 및 기능군무원의 각 직군, 직렬이 수행하는 업무이외의 업무</p>
+                    <p class="tbitem st">- 계약군무원 : 군무원 직무의 내용 및 특성을 고려하여 전문지식이 특히 필요하다고 인정되는 경우에 임용되며, 일반 계약군무원과 전문계약군무원으로 구분함</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
-
-  <script>
-      $('.popup-item').slick({
-        autoplay: true,
-        prevArrow: ".pi-prev",
-        nextArrow: ".pi-next",
-      });
-
-      $('.popupToggle').on('click', function() {
-        if ($(this).hasClass('is-playing')) {
-          $('.popup-item').slick('slickPause');
-          $(this).removeClass('is-playing').addClass('is-paused');
-        } else {
-          $('.popup-item').slick('slickPlay');
-          $(this).removeClass('is-paused').addClass('is-playing');
-        }
-      });
-    </script>
 
   <footer class="footer" id="footer">
     <div class="footer-inner">

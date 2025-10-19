@@ -11,6 +11,7 @@
   <link href="./css/base.css" rel="stylesheet">
   <link href="./css/design.css" rel="stylesheet">
   <link href="./css/slick.css" rel="stylesheet">
+  <link href="./css/font-awesome.css" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="./js/slick.js"></script>
@@ -173,243 +174,197 @@
   </header>
 
   <main class="container">
-    <section class="main-visual">
-      <div class="slide-wrap">
-        <ul class="single-item">
-          <li><img src="images/slide/img1.png"/></li>
-          <li><img src="images/slide/img1.png"/></li>
-          <li><img src="images/slide/img1.png"/></li>
-        </ul>
-        <div class="mv-btn">
-          <button class="slideToggle is-playing"></button>
-        </div>
-      </div>
+    <section class="sub-visual" style="background-image:url('images/bg/bg.jpg');">
+      <strong class="title">공지사항</strong>
+      <span class="invigator">HOME / 커뮤니티 / 공지사항</span>
     </section>
 
-    <script>
-      $('.single-item').slick({
-        dots: true,
-        autoplay: true,
-        arrows: false,
-        appendDots: ".mv-btn",
-      });
-
-      $('.slideToggle').on('click', function() {
-        if ($(this).hasClass('is-playing')) {
-          $('.single-item').slick('slickPause');
-          $(this).removeClass('is-playing').addClass('is-paused');
-        } else {
-          $('.single-item').slick('slickPlay');
-          $(this).removeClass('is-paused').addClass('is-playing');
-        }
-      });
-    </script>
-
-    <section class="search-area">
-      <input type="text" placeholder="검색어를 입력해주세요.">
-      <button type="button"><img src="images/icon/searchBtn.png"/>검색</button>
-    </section>
-
-    <section class="quick-links">
-      <div class="board-box">
-        <ul class="board-tab">
-          <li class="notice active"><a href="#.">모집공고</a></li>
-          <li class="pass"><a href="#.">합격자 공고</a></li>
-        </ul>
-        <div class="board-list">
-          <a href="#." class="board-item">
-            <strong class="title">25년 해병대 전국대 ROTC 학군사관후보생 모집 공고25년 해병대 전국대 ROTC 학군사관후보생 모집 공고</strong>
-            <span class="date">2025-09-06</span>
-          </a>
-          <a href="#." class="board-item">
-            <strong class="title">25년 해병대 전국대 ROTC 학군사관후보생 모집 공고</strong>
-            <span class="date">2025-09-06</span>
-          </a>
-          <a href="#." class="board-item">
-            <strong class="title">25년 해병대 전국대 ROTC 학군사관후보생 모집 공고</strong>
-            <span class="date">2025-09-06</span>
-          </a>
-        </div>
-        <a href="#." class="success-search">
-          <div class="ss-imgbox"><img src="images/bg/search.png"/></div>
-          <div class="ss-introbox">
-            <div class="textbox">
-              <strong class="title">합격자 조회</strong>
-              <span class="text">장교/부사관/병(병무청)</span>
-            </div>
-            <span class="icon"><img src="images/icon/check.png"/></span>
-          </div>
-        </a>
-      </div>
-      <ul class="link-grid">
-        <li class="write unset">
-          <a href="#.">
-            <div class="textbox">
-              <strong class="title">지원서 작성</strong>
-              <span class="text">장교·부사관·병·군무원 지원서 작성 및 지원 내역을 확인해보세요.</span>
-            </div>
-            <span class="icon"><img src="images/icon/write.png"/></span>
-          </a>
-        </li>
-        <li class="room">
-          <a href="#.">
-            <div class="textbox">
-              <strong class="title">자료실</strong>
-              <span class="text">지원서·자기소개 양식 등의 각종 제출 서류 양식을 확인해보세요.</span>
-            </div>
-            <span class="icon"><img src="images/icon/download.png"/></span>
-          </a>
-        </li>
-        <li class="history unset">
-          <a href="#.">
-            <div class="textbox">
-              <strong class="title">모병문의처</strong>
-              <span class="text">문의사항이 있을 시 지역별 주소와 연락처 확인 후 해당하는 문의처로 문의 바랍니다.</span>
-            </div>
-            <span class="icon"><img src="images/icon/call.png"/></span>
-          </a>
-        </li>
-        <li class="intro">
-          <a href="#.">
-            <div class="textbox">
-              <strong class="title">병과 소개</strong>
-              <span class="text">문의사항이 있을 시 지역별 주소와 연락처 확인 후 해당하는 문의처로 문의 바랍니다.</span>
-            </div>
-            <span class="icon"><img src="images/icon/intro.png"/></span>
-          </a>
-        </li>
-        <li class="faq unset">
-          <a href="#.">
-            <div class="textbox">
-              <strong class="title">자주하는 질문</strong>
-              <span class="text">문의사항이 있을 시 지역별 주소와 연락처 확인 후 해당하는 문의처로 문의 바랍니다.</span>
-            </div>
-            <span class="icon"><img src="images/icon/qna.png"/></span>
-          </a>
-        </li>
-        <li class="qna">
-          <a href="#.">
-            <div class="textbox">
-              <strong class="title">질문과 답변</strong>
-              <span class="text">문의사항이 있을 시 지역별 주소와 연락처 확인 후 해당하는 문의처로 문의 바랍니다.</span>
-            </div>
-            <span class="icon"><img src="images/icon/faq.png"/></span>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="board-section">
-      <div class="board-insection">
-        <div class="content-box notice-board">
-            <div class="bs-title">
-              <strong class="title">공지사항</strong>
-              <a href="#." class="btn">더보기</a>
-            </div>
-            <div class="bs-list">
-              <a href="#." class="bs-item">
-                <div class="textbox">
-                  <strong class="title">25년도 군 가산복무지원금 지급, 유사자격 취소 공지 25년도 군 가산복무지원금 지급, 유사자격 취소 공지</strong>
-                  <span class="date">2025.09.10</span>
-                </div>
-                <span class="icon"></span>
-              </a>
-              <a href="#." class="bs-item">
-                <div class="textbox">
-                  <strong class="title">25년도 군 가산복무지원금 지급, 유사자격 취소 공지</strong>
-                  <span class="date">2025.09.10</span>
-                </div>
-                <span class="icon"></span>
-              </a>
-              <a href="#." class="bs-item">
-                <div class="textbox">
-                  <strong class="title">25년도 군 가산복무지원금 지급, 유사자격 취소 공지</strong>
-                  <span class="date">2025.09.10</span>
-                </div>
-                <span class="icon"></span>
-              </a>
-            </div>
-        </div>
-        <div class="content-box news-board">
-            <div class="bs-title">
-              <strong class="title">해병대 뉴스</strong>
-              <a href="#." class="btn">더보기</a>
-            </div>
-            <div class="bs-list">
-              <a href="#." class="bs-item">
-                <div class="textbox">
-                  <strong class="title">전투복 혁신으로 달라진 포브스... 볼 게 저는 자신감 전투복 혁신으로 달라진 포브스... 볼 게 저는 자신감</strong>
-                  <span class="date">2025.09.10</span>
-                </div>
-                <span class="icon"></span>
-              </a>
-              <a href="#." class="bs-item">
-                <div class="textbox">
-                  <strong class="title">전투복 혁신으로 달라진 포브스... 볼 게 저는 자신감</strong>
-                  <span class="date">2025.09.10</span>
-                </div>
-                <span class="icon"></span>
-              </a>
-              <a href="#." class="bs-item">
-                <div class="textbox">
-                  <strong class="title">전투복 혁신으로 달라진 포브스... 볼 게 저는 자신감</strong>
-                  <span class="date">2025.09.10</span>
-                </div>
-                <span class="icon"></span>
-              </a>
-            </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="media-section">
-      <div class="media-left">
-        <div class="ms-title">
-          <strong class="title">팝업존</strong>
-          <div class="ms-btn">
-            <button class="pi-prev"><img src="images/icon/prev.png"/></button>
-            <button class="popupToggle is-playing"></button>
-            <button class="pi-next"><img src="images/icon/next.png"/></button>
-          </div>
-        </div>
-        <div class="ms-cont">
-          <ul class="popup-item">
-            <li><img src="images/slide/img2.png" alt="국방력 평가 방식 변경 안내"></li>
-            <li><img src="images/slide/img2.png" alt="국방력 평가 방식 변경 안내"></li>
+    <section class="sub-container">
+      <div class="sub-inner">
+        <div class="sub-nav">
+          <strong class="title">커뮤니티</strong>
+          <ul class="sub-nlist">
+            <li><a href="sub7-1.html">공지사항</a></li>
+            <li class="active">
+              <a href="sub7-2.html">해병대캠프</a>
+              <ul class="subin-nlist">
+                <li class="active"><a href="sub7-2.html">캠프안내</a></li>
+                <li><a href="sub7-2-2.html">캠프지원</a></li>
+                <li><a href="sub7-2-3.html">지원결과조회</a></li>
+                <li><a href="sub7-2-4.html">합격자조회</a></li>
+                <li><a href="sub7-2-5.html">입소준비물</a></li>
+                <li><a href="sub7-2-6.html">찾아오시는길</a></li>
+                <li><a href="sub7-2-7.html">사진자료</a></li>
+              </ul>
+            </li>
+            <li><a href="sub7-3.html">자주하는 질문</a></li>
+            <li><a href="sub7-4.html">병과소개</a></li>
+            <li><a href="sub7-5.html">모병문의처</a></li>
+            <li><a href="sub7-6.html">찾아오시는길</a></li>
           </ul>
         </div>
-      </div>
-      <div class="media-right">
-        <iframe
-          src="https://www.youtube.com/embed/4soWoPLVSgU"
-          title="[나는 해병이다] 해병대 모병관편"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen
-        >
-        </iframe>
+        <div class="sub-inbox">
+          <div class="sub-set">
+            <div class="textBox">
+              <div class="textInbox">
+                <strong class="tbTitle">▶ 해병대 캠프란?</strong>
+                <div class="tbInBox">
+                  <p class="tbitem nd">대한민국 해병대가 주관하여 국민을 대상으로 올바른 안보관을 확립하고 청소년들의 협동심·단합력을 배양시키며 미래 우수자원의 해병대 입대를 유도하기 위해 전군 최초로 1997년 시행하여 약 37,000여명의 수료자 배출</p>
+                </div>
+              </div>
+            </div>
+            <div class="textBox">
+              <div class="textInbox">
+                <strong class="tbTitle">▶ 운영 기간 및 자격</strong>
+                <div class="tbInBox">
+                  <p class="tbitem st">- 운영기간 : 하계(7월 28일 ~ 8월 1일 / 1개 차수), 동계(1월 / 1개 차수)</p>
+                  <p class="tbitem nd">* 136차(여름캠프) '25. 7. 28.(월) ~ 8. 1.(금) 운영 예정</p>
+                  <p class="tbitem st">- 지원자격 : 중·고교생 및 대학생, 일반인 / 1개 차수</p>
+                </div>
+              </div>
+            </div>
+            <div class="textBox">
+              <div class="textInbox">
+                <strong class="tbTitle">▶ 장소</strong>
+                <div class="tbInBox">
+                  <p class="tbitem st big">해병대 제1사단(경상북도 포항)</p>
+                </div>
+              </div>
+            </div>
+            <div class="textBox">
+              <div class="textInbox">
+                <strong class="tbTitle">▶ 모집 및 선발계획</strong>
+                <div class="tbInBox">
+                  <p class="tbitem st">○ 모집 및 선발시기 : 입소일 기준 2주전(공고에 포함)</p>
+                  <p class="tbitem st">○ 선발방법 : 인터넷 지원 접수 및 입소비 이체 우선 순</p>
+                  <p class="tbitem nd">① 해병대 홈페이지 '캠프지원'에서 지원서 작성, 입금계좌 확인</p>
+                  <p class="tbitem nd">② 지원자 명의로 입소비 입금(지원자 이름이 아닐 경우 미접수 / 환불)</p>
+                  <p class="tbitem nd">③ 인터넷 지원접수 및 입소비 이체 우선순으로 선발</p>
+                </div>
+              </div>
+            </div>
+            <div class="textBox">
+              <div class="textInbox">
+                <strong class="tbTitle">▶ 참가비용</strong>
+                <div class="tbInBox">
+                  <p class="tbitem st">개인별 9만원(식비, 유류비, 행정용품 구입 등)  * 물가상승률에 따라 다소 변동 가능성 있음 </p>
+                  <p class="tbitem st">＊ 개인별 훈련피복 및 무장류 : 해병대에서 대여 후 훈련종료 후 회수</p>
+                  <p class="tbitem st">＊ 지원서 작성을 완료해야 입금계좌 확인 가능 -> 지원자 명의로 입소비 입금</p>
+                </div>
+              </div>
+            </div>
+            <div class="textBox">
+              <div class="textInbox">
+                <strong class="tbTitle">▶ 교육 프로그램 (4박 5일)</strong>
+                <table class="rowTable">
+                  <colgroup>
+                    <col width="20%">
+                    <col width="20%">
+                    <col width="20%">
+                    <col width="20%">
+                    <col width="20%">
+                  </colgroup>
+                  <tr>
+                    <th><strong class="nmTitle">1일차</strong></th>
+                    <th><strong class="nmTitle">2일차</strong></th>
+                    <th><strong class="nmTitle">3일차</strong></th>
+                    <th><strong class="nmTitle">4일차</strong></th>
+                    <th><strong class="nmTitle">5일차</strong></th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="tbInBox">
+                        <p class="tbitem">• 입소식</p>
+                        <p class="tbitem">• 나라사랑 안보교육</p>
+                        <p class="tbitem">• 소대/생활반 편성</p>
+                        <p class="tbitem">• 구급법/호신술</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="tbInBox">
+                        <p class="tbitem">• 팀리더십 훈련</p>
+                        <p class="tbitem">• 공수기초 훈련</p>
+                        <p class="tbitem">• 해상생존술</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="tbInBox">
+                        <p class="tbitem">• IBS훈련</p>
+                        <p class="tbitem">• 해양 체육활동(수중총력,기마전)</p>
+                        <p class="tbitem">• 종합훈련(행군,숙영,취사)</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="tbInBox">
+                        <p class="tbitem">• 유격기초훈련</p>
+                        <p class="tbitem">• 화생방 체험실습</p>
+                        <p class="tbitem">• 자기계발계획하기</p>
+                        <p class="tbitem">• 부모님께 편지 쓰기</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="tbInBox">
+                        <p class="tbitem">• 모병홍보/설문수리</p>
+                        <p class="tbitem">• 수료식(빨간명찰 수여식)</p>
+                        <p class="tbitem">• 역사관 견학</p>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+                <p class="tbitem">* 부대여건에 따라 변동 가능하므로, 참고하시길 바랍니다.</p>
+              </div>
+            </div>
+            <div class="textBox">
+              <div class="textInbox">
+                <strong class="tbTitle">▶ 안전 대책</strong>
+                <table class="rowTable">
+                  <colgroup>
+                    <col width="20%">
+                    <col width="60%">
+                    <col width="20%">
+                  </colgroup>
+                  <tr>
+                    <th><strong class="nmTitle">구분</strong></th>
+                    <th><strong class="nmTitle">준비내용</strong></th>
+                    <th><strong class="nmTitle">비고</strong></th>
+                  </tr>
+                  <tr>
+                    <td><p class="tbitem center">입소간</p></td>
+                    <td></td>
+                    <td rowspan="5"><p class="tbitem center">교육대장 / 교관</p></td>
+                  </tr>
+                  <tr>
+                    <td><p class="tbitem center">차량이동간</p></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><p class="tbitem center">교육간</p></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><p class="tbitem center">교육대 운영간</p></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><p class="tbitem center">기 타</p></td>
+                    <td></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="textBox">
+              <div class="textInbox">
+                <strong class="tbTitle">▶ 문의처</strong>
+                <div class="tbInBox">
+                  <p class="tbitem st big">해병대사령부 인재획득과(031-8012-3131, 3133, 3139)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
-
-  <script>
-      $('.popup-item').slick({
-        autoplay: true,
-        prevArrow: ".pi-prev",
-        nextArrow: ".pi-next",
-      });
-
-      $('.popupToggle').on('click', function() {
-        if ($(this).hasClass('is-playing')) {
-          $('.popup-item').slick('slickPause');
-          $(this).removeClass('is-playing').addClass('is-paused');
-        } else {
-          $('.popup-item').slick('slickPlay');
-          $(this).removeClass('is-paused').addClass('is-playing');
-        }
-      });
-    </script>
 
   <footer class="footer" id="footer">
     <div class="footer-inner">

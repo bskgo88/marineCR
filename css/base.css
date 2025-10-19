@@ -55,6 +55,7 @@ body {
     line-height: 1.2;
     font-weight: 800;
     font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.25px;
     /* 폰트 렌더링 최적화 (가독성 향상) */
     text-rendering: optimizeLegibility; 
     -webkit-font-smoothing: antialiased; 
@@ -102,4 +103,10 @@ h1, h2, h3, h4, h5, h6 {
     clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
     border: 0 !important;
+}
+
+table {
+    border-spacing:0;
+    table-layout:fixed;
+    border-collapse:collapse;
 }

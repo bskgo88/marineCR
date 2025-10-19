@@ -11,9 +11,12 @@
   <link href="./css/base.css" rel="stylesheet">
   <link href="./css/design.css" rel="stylesheet">
   <link href="./css/slick.css" rel="stylesheet">
+  <link href="./css/magnific.css" rel="stylesheet">
+  <link href="./css/font-awesome.css" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="./js/slick.js"></script>
+  <script src="./js/magnific.js"></script>
   <script src="./js/default.js"></script>
 </head>
 <body>
@@ -173,243 +176,160 @@
   </header>
 
   <main class="container">
-    <section class="main-visual">
-      <div class="slide-wrap">
-        <ul class="single-item">
-          <li><img src="images/slide/img1.png"/></li>
-          <li><img src="images/slide/img1.png"/></li>
-          <li><img src="images/slide/img1.png"/></li>
-        </ul>
-        <div class="mv-btn">
-          <button class="slideToggle is-playing"></button>
-        </div>
-      </div>
+    <section class="sub-visual" style="background-image:url('images/bg/bg.jpg');">
+      <strong class="title">장교 지원</strong>
+      <span class="invigator">HOME / 지원서작성 / 장교 지원</span>
     </section>
 
-    <script>
-      $('.single-item').slick({
-        dots: true,
-        autoplay: true,
-        arrows: false,
-        appendDots: ".mv-btn",
-      });
-
-      $('.slideToggle').on('click', function() {
-        if ($(this).hasClass('is-playing')) {
-          $('.single-item').slick('slickPause');
-          $(this).removeClass('is-playing').addClass('is-paused');
-        } else {
-          $('.single-item').slick('slickPlay');
-          $(this).removeClass('is-paused').addClass('is-playing');
-        }
-      });
-    </script>
-
-    <section class="search-area">
-      <input type="text" placeholder="검색어를 입력해주세요.">
-      <button type="button"><img src="images/icon/searchBtn.png"/>검색</button>
-    </section>
-
-    <section class="quick-links">
-      <div class="board-box">
-        <ul class="board-tab">
-          <li class="notice active"><a href="#.">모집공고</a></li>
-          <li class="pass"><a href="#.">합격자 공고</a></li>
-        </ul>
-        <div class="board-list">
-          <a href="#." class="board-item">
-            <strong class="title">25년 해병대 전국대 ROTC 학군사관후보생 모집 공고25년 해병대 전국대 ROTC 학군사관후보생 모집 공고</strong>
-            <span class="date">2025-09-06</span>
-          </a>
-          <a href="#." class="board-item">
-            <strong class="title">25년 해병대 전국대 ROTC 학군사관후보생 모집 공고</strong>
-            <span class="date">2025-09-06</span>
-          </a>
-          <a href="#." class="board-item">
-            <strong class="title">25년 해병대 전국대 ROTC 학군사관후보생 모집 공고</strong>
-            <span class="date">2025-09-06</span>
-          </a>
-        </div>
-        <a href="#." class="success-search">
-          <div class="ss-imgbox"><img src="images/bg/search.png"/></div>
-          <div class="ss-introbox">
-            <div class="textbox">
-              <strong class="title">합격자 조회</strong>
-              <span class="text">장교/부사관/병(병무청)</span>
-            </div>
-            <span class="icon"><img src="images/icon/check.png"/></span>
-          </div>
-        </a>
-      </div>
-      <ul class="link-grid">
-        <li class="write unset">
-          <a href="#.">
-            <div class="textbox">
-              <strong class="title">지원서 작성</strong>
-              <span class="text">장교·부사관·병·군무원 지원서 작성 및 지원 내역을 확인해보세요.</span>
-            </div>
-            <span class="icon"><img src="images/icon/write.png"/></span>
-          </a>
-        </li>
-        <li class="room">
-          <a href="#.">
-            <div class="textbox">
-              <strong class="title">자료실</strong>
-              <span class="text">지원서·자기소개 양식 등의 각종 제출 서류 양식을 확인해보세요.</span>
-            </div>
-            <span class="icon"><img src="images/icon/download.png"/></span>
-          </a>
-        </li>
-        <li class="history unset">
-          <a href="#.">
-            <div class="textbox">
-              <strong class="title">모병문의처</strong>
-              <span class="text">문의사항이 있을 시 지역별 주소와 연락처 확인 후 해당하는 문의처로 문의 바랍니다.</span>
-            </div>
-            <span class="icon"><img src="images/icon/call.png"/></span>
-          </a>
-        </li>
-        <li class="intro">
-          <a href="#.">
-            <div class="textbox">
-              <strong class="title">병과 소개</strong>
-              <span class="text">문의사항이 있을 시 지역별 주소와 연락처 확인 후 해당하는 문의처로 문의 바랍니다.</span>
-            </div>
-            <span class="icon"><img src="images/icon/intro.png"/></span>
-          </a>
-        </li>
-        <li class="faq unset">
-          <a href="#.">
-            <div class="textbox">
-              <strong class="title">자주하는 질문</strong>
-              <span class="text">문의사항이 있을 시 지역별 주소와 연락처 확인 후 해당하는 문의처로 문의 바랍니다.</span>
-            </div>
-            <span class="icon"><img src="images/icon/qna.png"/></span>
-          </a>
-        </li>
-        <li class="qna">
-          <a href="#.">
-            <div class="textbox">
-              <strong class="title">질문과 답변</strong>
-              <span class="text">문의사항이 있을 시 지역별 주소와 연락처 확인 후 해당하는 문의처로 문의 바랍니다.</span>
-            </div>
-            <span class="icon"><img src="images/icon/faq.png"/></span>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="board-section">
-      <div class="board-insection">
-        <div class="content-box notice-board">
-            <div class="bs-title">
-              <strong class="title">공지사항</strong>
-              <a href="#." class="btn">더보기</a>
-            </div>
-            <div class="bs-list">
-              <a href="#." class="bs-item">
-                <div class="textbox">
-                  <strong class="title">25년도 군 가산복무지원금 지급, 유사자격 취소 공지 25년도 군 가산복무지원금 지급, 유사자격 취소 공지</strong>
-                  <span class="date">2025.09.10</span>
-                </div>
-                <span class="icon"></span>
-              </a>
-              <a href="#." class="bs-item">
-                <div class="textbox">
-                  <strong class="title">25년도 군 가산복무지원금 지급, 유사자격 취소 공지</strong>
-                  <span class="date">2025.09.10</span>
-                </div>
-                <span class="icon"></span>
-              </a>
-              <a href="#." class="bs-item">
-                <div class="textbox">
-                  <strong class="title">25년도 군 가산복무지원금 지급, 유사자격 취소 공지</strong>
-                  <span class="date">2025.09.10</span>
-                </div>
-                <span class="icon"></span>
-              </a>
-            </div>
-        </div>
-        <div class="content-box news-board">
-            <div class="bs-title">
-              <strong class="title">해병대 뉴스</strong>
-              <a href="#." class="btn">더보기</a>
-            </div>
-            <div class="bs-list">
-              <a href="#." class="bs-item">
-                <div class="textbox">
-                  <strong class="title">전투복 혁신으로 달라진 포브스... 볼 게 저는 자신감 전투복 혁신으로 달라진 포브스... 볼 게 저는 자신감</strong>
-                  <span class="date">2025.09.10</span>
-                </div>
-                <span class="icon"></span>
-              </a>
-              <a href="#." class="bs-item">
-                <div class="textbox">
-                  <strong class="title">전투복 혁신으로 달라진 포브스... 볼 게 저는 자신감</strong>
-                  <span class="date">2025.09.10</span>
-                </div>
-                <span class="icon"></span>
-              </a>
-              <a href="#." class="bs-item">
-                <div class="textbox">
-                  <strong class="title">전투복 혁신으로 달라진 포브스... 볼 게 저는 자신감</strong>
-                  <span class="date">2025.09.10</span>
-                </div>
-                <span class="icon"></span>
-              </a>
-            </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="media-section">
-      <div class="media-left">
-        <div class="ms-title">
-          <strong class="title">팝업존</strong>
-          <div class="ms-btn">
-            <button class="pi-prev"><img src="images/icon/prev.png"/></button>
-            <button class="popupToggle is-playing"></button>
-            <button class="pi-next"><img src="images/icon/next.png"/></button>
-          </div>
-        </div>
-        <div class="ms-cont">
-          <ul class="popup-item">
-            <li><img src="images/slide/img2.png" alt="국방력 평가 방식 변경 안내"></li>
-            <li><img src="images/slide/img2.png" alt="국방력 평가 방식 변경 안내"></li>
+    <section class="sub-container">
+      <div class="sub-inner">
+        <div class="sub-nav">
+          <strong class="title">지원서작성</strong>
+          <ul class="sub-nlist">
+            <li class="active"><a href="sub5-1.html">장교 지원</a></li>
+            <li><a href="sub5-2.html">부사관 지원</a></li>
+            <li><a href="sub5-3.html">병 지원</a></li>
+            <li><a href="sub5-4.html">군무원 지원</a></li>
+            <li><a href="sub5-5.html">지원 확인</a></li>
+            <li><a href="sub5-6.html">자료실(서식)</a></li>
           </ul>
         </div>
-      </div>
-      <div class="media-right">
-        <iframe
-          src="https://www.youtube.com/embed/4soWoPLVSgU"
-          title="[나는 해병이다] 해병대 모병관편"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen
-        >
-        </iframe>
+        <div class="sub-inbox">
+          <strong class="stitle">※ 장교 지원서 작성시 해병대와 해군을 구분하여 접수하오니, 유의하여 신청바랍니다</strong>
+          <div class="sub-set">
+            <div class="textBox">
+              <div class="textInbox">
+                <strong class="tbTitle">1. [수집·이용 목적]</strong>
+                <div class="tbInBox">
+                  <p class="tbitem nd">가. 해병대 장교/부사관 지원자격 확인 및 선발업무의 공정성을 위함</p>
+                </div>
+              </div>
+            </div>
+            <div class="textBox">
+              <div class="textInbox">
+                <strong class="tbTitle">2. [수집하는 개인정보의 항목]</strong>
+                <div class="tbInBox">
+                  <p class="tbitem nd">가. 해병대 인터넷 홈페이지 해병대 모집에서는 장교/부사관 지원시 지원자격 확인 및 선발업무의 공정성을 위해 아래와 같은 개인정보를 수집하고 있습니다.</p>
+                  <p class="tbitem st">수집하는 개인정보의 항목</p>
+                  <p class="tbitem nd">가. 필수정보</p>
+                  <p class="tbitem rd">성명(한글, 한자), 주민등록번호, 전화번호, 휴대전화번호, E-mail주소, 주소, 학력사항(학교명, 학과, 학력구분), 병역사항, 신체정보(신장, 체중, 시력나안, 혈액형), 친권자정보(관계, 성명, 주민등록번호, 직업, 주소)</p>
+                  <p class="tbitem nd">나. 선택정보</p>
+                  <p class="tbitem rd">특기, 기술자격 및 국가고시(자격 및 면허명칭, 인정기관, 자격 및 면허번호, 취득일자), 신체정보(시력교정), 가족사항(관계, 성명, 학력, 연령, 직업, 직장 및 직위),국가유공자 가족(성명, 관계, 유공내용, 포상명칭, 포상시기)</p>
+                  <p class="tbitem nd">※선택정보는 입력하지 않아도 지원이 가능합니다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="textBox">
+              <div class="textInbox">
+                <strong class="tbTitle">3. [보유·이용 기간]</strong>
+                <div class="tbInBox">
+                  <p class="tbitem nd">수집한 개인정보는 선발업무 기간동안 보관합니다. 이 기간동안 이용자는 좌측의 접수확인/취소 메뉴를 통해 개인정보를 삭제할 수 있습니다. 원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체없이 파기합니다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="textBox">
+              <div class="textInbox">
+                <strong class="tbTitle">4. [동의거부 권리 및 동의 거부시 불이익의 내용]</strong>
+                <div class="tbInBox">
+                  <p class="tbitem nd">이용자는 개인정보 수집 동의를 거부할 권리가 있으며, 다만 이 경우 장교/부사관 지원이 제한됩니다.</p>
+                </div>
+                <div class="check-cont">
+									<div class="rd-type1">
+										<input type="radio" name="agreeTo1" id="agreeTo1_Y" value="Y" checked="checked">
+										<label class="chk" for="agreeTo1_Y"><i class="fa fa-check"></i></label>
+										<label class="txt" for="agreeTo1_Y">개인정보 수집 및 이용에 동의합니다.</label>
+									</div>
+									<div class="rd-type1">
+										<input type="radio" name="agreeTo1" value="N" id="agreeTo1_N">
+										<label class="chk" for="agreeTo1_N"><i class="fa fa-check"></i></label>
+										<label class="txt" for="agreeTo1_N">개인정보 수집 및 이용에 동의하지 않습니다.</label>
+									</div>
+								</div>
+              </div>
+            </div>
+            <div class="textBox">
+              <div class="textInbox">
+                <strong class="tbTitle">5. [고유식별정보의 수집]</strong>
+                <div class="tbInBox">
+                  <p class="tbitem nd">해군모집에서는 고유식별정보인 [주민등록번호]/[친권자 주민등록번호]를 수집합니다.</p>
+                </div>
+                <div class="check-cont">
+									<div class="rd-type1">
+										<input type="radio" name="agreeTo2" id="agreeTo2_Y" value="Y" checked="checked">
+										<label class="chk" for="agreeTo2_Y"><i class="fa fa-check"></i></label>
+										<label class="txt" for="agreeTo2_Y">고유식별정보 수집 및 이용에 동의합니다.</label>
+									</div>
+									<div class="rd-type1">
+										<input type="radio" name="agreeTo2" value="N" id="agreeTo2_N">
+										<label class="chk" for="agreeTo2_N"><i class="fa fa-check"></i></label>
+										<label class="txt" for="agreeTo2_N">고유식별정보 수집 및 이용에 동의하지 않습니다.</label>
+									</div>
+								</div>
+              </div>
+            </div>
+            <div class="textBox">
+              <div class="textInbox">
+                <strong class="tbTitle">6. [민감정보의 수집]</strong>
+                <div class="tbInBox">
+                  <p class="tbitem nd">해군모집에서는 민감정보인 [신장]/[체중] 등을 수집합니다.</p>
+                </div>
+                <div class="check-cont">
+									<div class="rd-type1">
+										<input type="radio" name="agreeTo3" id="agreeTo3_Y" value="Y" checked="checked">
+										<label class="chk" for="agreeTo3_Y"><i class="fa fa-check"></i></label>
+										<label class="txt" for="agreeTo3_Y">민감정보 수집 및 이용에 동의합니다.</label>
+									</div>
+									<div class="rd-type1">
+										<input type="radio" name="agreeTo3" value="N" id="agreeTo3_N">
+										<label class="chk" for="agreeTo3_N"><i class="fa fa-check"></i></label>
+										<label class="txt" for="agreeTo3_N">민감정보 수집 및 이용에 동의하지 않습니다.</label>
+									</div>
+								</div>
+              </div>
+            </div>
+            <div class="btnBox center">
+              <a href="sub5-1-2.html" class="btn">이전페이지</a>
+              <a href="#test-modal" class="btn Colorm Conpop">확인</a>
+            </div>
+            <div id="test-modal" class="zoom-anim-dialog mfp-hide popupBox mx600">
+              <div class="popupTBox"><strong class="ptbTitle">개인인증번호 입력</strong></div>
+              <div class="popupCont">
+                <div class="nmTable">
+                  <div class="mntr">
+                    <div class="nmth"><strong class="nmTitle">성명</strong></div>
+                    <div class="nmtd">
+                      <div class="inputBox">
+                        <input type="text" placeholder="한글 이름을 입력하세요."/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mntr">
+                    <div class="nmth"><strong class="nmTitle">개인인증번호</strong></div>
+                    <div class="nmtd">
+                      <div class="inputBox">
+                        <input type="password" placeholder="숫자 6 ~ 12자로 입력하세요."/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btnBox popup">
+                <a href="sub5-1-4.html" class="btn Colorm">지원서 작성</a>
+              </div>
+            </div>
+            <script>
+              $(function () {
+                $('.Conpop').magnificPopup({
+                  type: 'inline', fixedContentPos: false, fixedBgPos: true, overflowY: 'auto', closeBtnInside: true,
+                  preloader: false, midClick: true, removalDelay: 300, mainClass: 'my-mfp-slide-bottom'
+                });
+              });
+            </script>
+          </div>
+        </div>
       </div>
     </section>
   </main>
-
-  <script>
-      $('.popup-item').slick({
-        autoplay: true,
-        prevArrow: ".pi-prev",
-        nextArrow: ".pi-next",
-      });
-
-      $('.popupToggle').on('click', function() {
-        if ($(this).hasClass('is-playing')) {
-          $('.popup-item').slick('slickPause');
-          $(this).removeClass('is-playing').addClass('is-paused');
-        } else {
-          $('.popup-item').slick('slickPlay');
-          $(this).removeClass('is-paused').addClass('is-playing');
-        }
-      });
-    </script>
 
   <footer class="footer" id="footer">
     <div class="footer-inner">
