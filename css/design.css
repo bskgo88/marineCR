@@ -3,8 +3,12 @@
 /* ============================================== */
 
 /* 페이지 전체 컨테이너 설정 */
-body {min-width:1660px;}
+body {min-width:1660px; width:100%;}
 .container {display:flex; flex-direction:column; justify-content:flex-start; align-items:center; align-items:center;}
+
+@media screen and (max-width:960px) {
+    body {min-width:0;}
+}
 
 /* 내부 콘텐츠를 1200px (예시)로 제한하여 중앙에 배치하는 경우 */
 .header-inner,
@@ -20,7 +24,7 @@ body {min-width:1660px;}
 /* ============================================== */
 /* 1. Header 스타일 */
 /* ============================================== */
-.header {display:flex; width:100%; flex-direction:row; justify-content:center; align-items:center; position:relative; z-index:60;}
+.header {display:flex; width:100%; flex-direction:row; justify-content:center; align-items:center; position:relative; z-index:60; background-color:#FFFFFF;}
 .header-inner {display:flex; width:100%; flex-direction:row; justify-content:space-between; align-items:center; padding:0 60px;}
 .h-nav {display:flex; flex-direction:row; justify-content:flex-start; align-items:center; gap:160px;}
 .h-nav .logo {display:flex; margin:0;}
@@ -62,6 +66,30 @@ body {min-width:1660px;}
 .full-gnb .gnb-sub li {display:flex;}
 .full-gnb .gnb-sub li a {display:flex; flex-direction:row; justify-content:flex-start; align-items:center; font-size:17px; font-weight:500; color:#333333; letter-spacing:-0.5px;}
 
+@media screen and (max-width:960px) {
+    .header {flex-direction:row; justify-content:center; align-items:center;}
+    .header-inner {display:flex; width:100%; flex-direction:row; justify-content:space-between; align-items:center; padding:14px 16px;}
+    .h-nav {display:flex; width:100%; flex-direction:row; justify-content:flex-start; align-items:center; gap:24px;}
+    .h-nav .logo {display:flex; margin:0;}
+    .h-nav .logo img {height:32px;}
+    .h-nav .gnb {display:none;}
+
+    .menu-toggle {min-width:24px; height:20px;}
+    .menu-toggle .bar {display:flex; width:24px; height:4px;}
+    .menu-toggle.active .bar {position:absolute; top:calc(50% - 2px); left:calc(50% - 12px);}
+    .menu-toggle.active .bar.center {left:-50px;}
+    .menu-toggle.active .bar.first {transform:rotate(45deg);}
+    .menu-toggle.active .bar.last {transform:rotate(-45deg);}
+
+    .full-gnb {flex-direction:column; justify-content:flex-start; align-items:flex-start; top:60px; left:0; z-index:60;}
+    .full-gnb .gnb-box {flex-direction:column; padding:8px; justify-content:flex-start; align-items:flex-start; gap:20px;}
+    .full-gnb .gnb-box > li {display:flex; width:100%; max-width:100%; flex-direction:column; justify-content:flex-start; align-items:flex-start; gap:8px;}
+    .full-gnb .gnb-box > li > a {font-size:16px; line-height:1.2; color:#1d1d1d; font-weight:700; padding-bottom:12px;}
+    .full-gnb .gnb-box > li > a:after {width:20px; height:3px; left:2px;}
+    .full-gnb .gnb-sub {flex-direction:row; width:100%; justify-content:flex-start; align-items:flex-start; gap:8px; flex-wrap:wrap; padding:0;}
+    .full-gnb .gnb-sub li {display:flex; flex:0 1 calc(50% - 4px); border:1px solid #730000; border-radius:4px;}
+    .full-gnb .gnb-sub li a {width:100%; height:30px; font-size:12px; letter-spacing:-0.25px; text-align:center; justify-content:center; align-items:center;}
+}
 
 /* ============================================== */
 /* 2. Main Visual 및 제목 섹션 */
@@ -88,6 +116,20 @@ body {min-width:1660px;}
 .search-area button {
     display:inline-flex; flex:1 1 160px; height:75px; background-color:#a80000; justify-content:center; align-items:center; color:#FFFFFF; font-size:20px; font-weight:500; gap:8px;
     outline:none; border:none;
+}
+
+@media screen and (max-width:960px) {
+    .main-visual {overflow: hidden; background-color:#730000;}
+    .main-visual .slide-wrap {max-width:1920px; width:100%;}
+    .mv-btn {bottom:12px; padding-right:20px;}
+    .mv-btn .slideToggle {width:8px; height:14px; background-size:8px 14px; top:calc(50% - 7px); right:0;}
+    .mv-btn .slick-dots li button {width:14px; height:14px; border-radius:14px;}
+
+    /* 검색창 영역 */
+    .search-area {padding:24px 16px 0; background-color:#FFFFFF;}
+    .search-area input {width:calc(100% - 80px); height:50px; padding:0 12px; font-size:14px;}
+    .search-area button {max-width:80px; flex:1 1 60px; height:50px; font-size:14px; font-weight:500; gap:8px;}
+    .search-area button img {height:16px;}
 }
 
 /* ============================================== */
@@ -158,6 +200,63 @@ body {min-width:1660px;}
 .media-right {display:flex; flex:1; position:relative;}
 .media-right iframe {position:absolute; top:0; left:0; width:100%; height:100%;}
 
+@media screen and (max-width:960px) {
+    .quick-links {flex-direction:column; width:100%; justify-content:flex-start; align-items:flex-start; gap:24px; padding:24px 16px;}
+    .board-box {flex:1 1 100%; width:100%; flex-direction:column; justify-content:flex-start; align-items:flex-start; max-width:100%;}
+    .board-tab {width:100%;}
+    .board-tab li {height:40px;}
+    .board-tab li a {font-size:14px;}
+
+    .board-item {width:100%; flex-direction:row; justify-content:space-between; align-items:center; height:40px; padding:0 8px;}
+    .board-item .title {width:calc(100% - 65px); font-size:12px; line-height:1.2;}
+    .board-item .date {width:65px; font-size:11px;}
+
+    .success-search {flex-direction:column; justify-content:flex-start; align-items:stretch; margin-top:12px; border:1px solid #a80000;}
+    .ss-introbox {padding:20px 16px 16px;}
+    .ss-introbox .textbox {gap:8px;}
+    .ss-introbox .textbox .title {font-size:20px;}
+    .ss-introbox .textbox .text {font-size:14px; line-height:1.4}
+    .ss-introbox .icon img {width:32px;}
+
+    .link-grid {width:100%; flex-direction:row; flex-wrap:wrap;}
+    .link-grid > li {flex:1 1 50%; height:100%;}
+    .link-grid > li a {padding:20px 16px 16px; gap:12px;}
+    .link-grid > li a .textbox {gap:12px;}
+    .link-grid > li a .title {font-size:20px;}
+    .link-grid > li a .text {font-size:14px;}
+    .link-grid > li a .icon img {height:32px;}
+    .link-grid > li.unset {background-color:#a80000;}
+    .link-grid > li.unset a .title {color:#FFFFFF;}
+    .link-grid > li.unset a .text {color:#FFFFFF;}
+    .link-grid > li.write {order:1;}
+    .link-grid > li.room {order:2;}
+    .link-grid > li.intro {order:3;}
+    .link-grid > li.history {order:4;}
+    .link-grid > li.faq {order:5;}
+    .link-grid > li.qna {order:6;}
+
+    .board-section {padding:20px 16px;}
+    .board-insection {flex-direction:column; justify-content:flex-start; align-items:flex-start; gap:16px;}
+    .content-box {max-width:100%; width:100%; flex-direction:column; justify-content:flex-start; align-items:flex-start; gap:8px;}
+    .bs-title {width:100%;}
+    .bs-title .title {font-size:18px;}
+    .bs-title .btn {width:60px; height:24px; font-size:12px;}
+    .bs-list {width:100%;}
+    .bs-item {width:100%; height:60px; padding:0 8px; gap:8px;}
+    .bs-item .textbox {flex:1 1 100%; width:100%; gap:8px;}
+    .bs-item .textbox .title {max-width:100%; font-size:14px; line-height:1.2; font-weight:400;}
+    .bs-item .textbox .date {font-size:11px;}
+    .bs-list .icon {display:none;}
+
+    .media-section {flex-direction:column; justify-content:flex-start; align-items:flex-start; padding:20px 16px; gap:12px;}
+    .media-left {display:flex; width:100%; max-width:578px; flex-direction:column; justify-content:flex-start; align-items:flex-start;}
+    .media-left .ms-title {height:50px; padding:0 12px;}
+    .media-left .ms-title .title {font-size:14px;}
+    .media-left .ms-btn {gap:12px;}
+    .media-right {width:100%; height:250px; flex:auto;}
+    .media-right iframe {position:absolute; top:0; left:0; width:100%; height:100%;}
+}
+
 /* ============================================== */
 /* 4. Footer 스타일 */
 /* ============================================== */
@@ -193,6 +292,35 @@ body {min-width:1660px;}
 #btn_chatbot {background-color:#FFFFFF;}
 #btn_chatbot .text {display:flex; flex-direction:column; line-height:1.1; font-size:15px; color:#1d1d1d; font-weight:600; justify-content:center; align-items:center;}
 #btn_chatbot .text .color {display:flex; line-height:1.1; font-size:15px; color:#a80000; font-weight:600;}
+
+@media screen and (max-width:960px) {
+    .footer {height:auto; flex-direction:column; justify-content:flex-start; align-items:flex-start;}
+    .footer-inner {flex-direction:column; justify-content:flex-start; align-items:flex-start; padding:20px 16px;}
+    .footer-info {flex-direction:column; justify-content:center; align-items:center; gap:16px;}
+    .footer-text {justify-content:center; align-items:center; gap:8px;}
+    .ft-top {width:100%; flex-direction:column; justify-content:center; align-items:center; gap:0;}
+    .ft-top .text {width:100%; font-size:14px; line-height:1.4; justify-content:center; align-items:center;}
+    .ft-bottom {width:100%; flex-direction:column; justify-content:center; align-items:center; gap:0;}
+    .ft-bottom .termp {width:100%; font-size:14px; line-height:1.4; justify-content:center; align-items:center; text-align:center}
+    .ft-bottom .line {display:none;}
+    .ft-bottom .text {width:100%; font-size:14px; line-height:1.4; justify-content:center; align-items:center; text-align:center; word-break:keep-all;}
+
+    .social-links {width:100%; justify-content:center; align-items:center; gap:16px; padding-top:18px;}
+    .link-box {display:flex; width:100%; justify-content:center; align-items:center;}
+    .link-box select {width:60%; height:40px; padding:0 28px 0 12px; background-position:top 50% right 12px; background-size:12px 7px; font-size:14px;}
+    .link-box select:focus {background-image:url('../images/icon/sel_down.png');}
+    .link-box select option {color:#1d1d1d;}
+    .social-box {display:flex; flex-direction:row; justify-content:flex-end; align-items:center; gap:4px;}
+    .social-box a {display:flex; justify-content:center; align-items:center;}
+
+    #quick_menu {right:5px; bottom:55px; gap:12px;}
+    #quick_menu button {width:60px; height:60px; border-radius:30px; gap:4px;}
+    #quick_menu button .icon img {height:12px;}
+    #btn_top {background-color:#a80000;}
+    #btn_top .text {font-size:14px;}
+    #btn_chatbot .text {line-height:1.2; font-size:12px;}
+    #btn_chatbot .text .color {line-height:1.2; font-size:12px;}
+}
 
 /* ============================================== */
 /* 4. sub 공통 스타일 */
