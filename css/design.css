@@ -258,6 +258,7 @@ body {min-width:1660px;}
 
 /* textbox */
 .textBox {display:flex; width:100%; flex-direction:column; justify-content:flex-start; align-items:flex-start; padding-bottom:24px; border-bottom:1px solid #e3e3e3;}
+.textBox.border {border:1px solid #e3e3e3; max-height:150px; overflow:auto; padding:20px;}
 .textInbox {display:flex; width:100%; flex-direction:column; justify-content:flex-start; align-items:flex-start; gap:16px;}
 .tbTitle {display:flex; width:100%; flex-direction:row; justify-content:flex-start; align-items:flex-start; font-size:18px; color:#1d1d1d; font-weight:600; line-height:26px; gap:12px;}
 .tbColor {font-size:12px; color:#009e25; line-height:26px;}
