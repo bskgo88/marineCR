@@ -212,313 +212,523 @@
           <div class="sub-set">
             <strong class="tbTitle">현역복무지원서(ROTC)</strong>
             <div class="containerBox">
-              <strong class="tbTitle">▶ 지원사항</strong>
-              <table class="rowTable">
-                <colgroup>
-                  <col width="16%">
-                  <col width="16%">
-                  <col width="16%">
-                  <col width="16%">
-                  <col width="16%">
-                  <col width="16%">
-                </colgroup>
-                <tr>
-                  <th><strong class="nmTitle">지원구분</strong></th>
-                  <td><p class="tbitem center">해병대</p></td>
-                  <th><strong class="nmTitle">지원신분</strong></th>
-                  <td><p class="tbitem center">ROTC</p></td>
-                  <th><strong class="nmTitle">접수지구</strong></th>
-                  <td>
-                    <div class="inputBox">
-                      <select>
-                        <option>선택하세요</option>
-                      </select>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th><strong class="nmTitle">지원계열</strong></th>
-                  <td colspan="3">
-                    <div class="inputRow fgap">
-                      <div class="inputRow">
-                        <label class="inputLabel">지원계열</label>
-                        <div class="inputBox">
-                          <select>
-                            <option>선택하세요</option>
-                          </select>
+              <strong class="tbTitle">▶ 학력사항</strong>
+              <div class="sTableBox">
+                <table class="rowTable">
+                  <colgroup>
+                    <col width="10%">
+                    <col width="19%">
+                    <col width="19%">
+                    <col width="13%">
+                    <col width="13%">
+                    <col width="13%">
+                    <col width="13%">
+                  </colgroup>
+                  <tr>
+                    <th><strong class="nmTitle">학력</strong></th>
+                    <th><strong class="nmTitle">학교명</strong></th>
+                    <th><strong class="nmTitle">학과</strong></th>
+                    <th><strong class="nmTitle">학력</strong></th>
+                    <th><strong class="nmTitle">졸업일</strong></th>
+                    <th><strong class="nmTitle">지역</strong></th>
+                    <th><strong class="nmTitle">구분</strong></th>
+                  </tr>
+                  <tr>
+                    <th><strong class="nmTitle">검정고시유무</strong></th>
+                    <td colspan="2">
+                      <div class="inputRow fgap">
+                        <div class="rd-type1">
+                          <input type="radio" name="country" id="contItem01">
+                          <label class="chk" for="contItem01"><i class="fa fa-check"></i></label>
+                          <label class="txt" for="contItem01">일반고 진학</label>
+                        </div>
+                        <div class="rd-type1">
+                          <input type="radio" name="country" id="contItem02">
+                          <label class="chk" for="contItem02"><i class="fa fa-check"></i></label>
+                          <label class="txt" for="contItem02">검정고시</label>
                         </div>
                       </div>
+                    </td>
+                    <th><strong class="nmTitle">합격일</strong></th>
+                    <td colspan="3">
+                      <div class="inputBox">
+                        <input type="date"/>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><strong class="nmTitle">고등학교</strong></th>
+                    <td>
                       <div class="inputRow">
-                        <label class="inputLabel">2지망</label>
+                        <button class="inputBtn">학교선택</button>
                         <div class="inputBox">
-                          <select>
-                            <option>선택하세요</option>
-                          </select>
+                        <input type="text"/>
                         </div>
                       </div>
-                    </div>
-                  </td>
-                  <th><strong class="nmTitle">특기<br/><span class="tbRed">(군악지원자만해당)</span></strong></th>
-                  <td>
-                    <div class="inputBox">
-                      <input type="text"/>
-                    </div>
-                  </td>
-                </tr>
-              </table>
-              <div class="tbInBox">
-                <p class="tbitem">
-                  <div class="rd-type1">
-										<input type="checkbox" id="agreeTo1_Y">
-										<label class="chk" for="agreeTo1_Y"><i class="fa fa-check"></i></label>
-										<label class="txt" for="agreeTo1_Y">임의분류 동의 (동의 시, 1·2지망에서 불합격 된 경우 다른계열로 분류되어 선발됨)</label>
-									</div>
-                </p>
-                <p class="tbitem">
-                  <div class="rd-type1">
-										<input type="checkbox" id="agreeTo2_Y">
-										<label class="chk" for="agreeTo2_Y"><i class="fa fa-check"></i></label>
-										<label class="txt" for="agreeTo2_Y">과거 필기점수 활용 동의 (동의 시, 필기시험 미실시)</label>
-									</div>
-                </p>
+                    </td>
+                    <td>
+                      <div class="inputRow">
+                        <button class="inputBtn">학과선택</button>
+                        <div class="inputBox">
+                        <input type="text"/>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <select>
+                          <option>선택하세요</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <input type="date"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <input type="text"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <select>
+                          <option>선택하세요</option>
+                        </select>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><strong class="nmTitle">대학교</strong></th>
+                    <td>
+                      <div class="inputRow">
+                        <button class="inputBtn">학교선택</button>
+                        <div class="inputBox">
+                        <input type="text"/>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputRow">
+                        <button class="inputBtn">학과선택</button>
+                        <div class="inputBox">
+                        <input type="text"/>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <select>
+                          <option>선택하세요</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <input type="date"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <input type="text"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <select>
+                          <option>선택하세요</option>
+                        </select>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><strong class="nmTitle">계열</strong></th>
+                    <td colspan="2">
+                      <div class="inputBox">
+                        <select>
+                          <option>선택하세요</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td colspan="4"></td>
+                  </tr>
+                </table>
               </div>
             </div>
+
             <div class="containerBox">
-              <strong class="tbTitle">▶ 개인신상</strong>
-              <table class="rowTable">
-                <colgroup>
-                  <col width="10%">
-                  <col width="18%">
-                  <col width="18%">
-                  <col width="18%">
-                  <col width="18%">
-                  <col width="20%">
-                </colgroup>
-                <tr>
-                  <th rowspan="2"><strong class="nmTitle">성명</strong></th>
-                  <td>
-                    <div class="inputRow">
-                      <label class="inputLabel">한글 :</label>
+              <strong class="tbTitle">▶ 가족사항</strong>
+              <div class="sTableBox">
+                <table class="rowTable">
+                  <colgroup>
+                    <col width="16%">
+                    <col width="16%">
+                    <col width="23%">
+                    <col width="23%">
+                    <col width="23%">
+                  </colgroup>
+                  <tr>
+                    <th><strong class="nmTitle">관계</strong></th>
+                    <th><strong class="nmTitle">성명</strong></th>
+                    <th><strong class="nmTitle">학력</strong></th>
+                    <th><strong class="nmTitle">생년월일</strong></th>
+                    <th><strong class="nmTitle">직업</strong></th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="inputBox">
+                        <select>
+                          <option>선택하세요</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
                       <div class="inputBox">
                         <input type="text"/>
                       </div>
-                    </div>
-                  </td>
-                  <th><strong class="nmTitle">주민등록번호</strong></th>
-                  <td colspan="2">
-                    <div class="inputRow">
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <select>
+                          <option>선택하세요</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <input type="date"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <select>
+                          <option>선택하세요</option>
+                        </select>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="inputBox">
+                        <select>
+                          <option>선택하세요</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
                       <div class="inputBox">
                         <input type="text"/>
                       </div>
-                      <label class="inputLabel">-</label>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <select>
+                          <option>선택하세요</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <input type="date"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <select>
+                          <option>선택하세요</option>
+                        </select>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="inputBox">
+                        <select>
+                          <option>선택하세요</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
                       <div class="inputBox">
                         <input type="text"/>
                       </div>
-                    </div>
-                  </td>
-                  <td rowspan="4">
-                    <div class="imgUpload">
-                      <div class="imgupBox"><img src="images/bg/ID_Photo.jpg"/></div>
-                      <div class="imgupBtn">
-                        <label for="upfile">업로드</label>
-                        <input id="upfile" type="file"/>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <select>
+                          <option>선택하세요</option>
+                        </select>
                       </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="inputRow">
-                      <label class="inputLabel">한자 :</label>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <input type="date"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <select>
+                          <option>선택하세요</option>
+                        </select>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="inputBox">
+                        <select>
+                          <option>선택하세요</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
                       <div class="inputBox">
                         <input type="text"/>
                       </div>
-                    </div>
-                  </td>
-                  <th><strong class="nmTitle">이메일</strong></th>
-                  <td colspan="2">
-                    <div class="inputBox">
-                      <input type="text"/>
-                    </div>
-                  </td>
-                  <td rowspan="4"></td>
-                </tr>
-                <tr>
-                  <th><strong class="nmTitle">연락처</strong></th>
-                  <td colspan="2">
-                    <div class="inputCol">
-                      <strong class="inputLabel">집(또는 부모)</strong>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <select>
+                          <option>선택하세요</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <input type="date"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <select>
+                          <option>선택하세요</option>
+                        </select>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="containerBox">
+              <strong class="tbTitle">▶ 경력사항</strong>
+              <div class="sTableBox">
+                <table class="rowTable">
+                  <colgroup>
+                    <col width="44%">
+                    <col width="23%">
+                    <col width="23%">
+                  </colgroup>
+                  <tr>
+                    <th><strong class="nmTitle">근무기간</strong></th>
+                    <th><strong class="nmTitle">근무처</strong></th>
+                    <th><strong class="nmTitle">담당직위</strong></th>
+                  </tr>
+                  <tr>
+                    <td>
                       <div class="inputRow">
                         <div class="inputBox">
-                          <select>
-                            <option>02</option>
-                          </select>
+                          <input type="date"/>
                         </div>
-                        <label class="inputLabel">-</label>
+                        <label class="inputLabel">~</label>
                         <div class="inputBox">
-                          <input type="text"/>
-                        </div>
-                        <label class="inputLabel">-</label>
-                        <div class="inputBox">
-                          <input type="text"/>
+                          <input type="date"/>
                         </div>
                       </div>
-                    </div>
-                  </td>
-                  <td colspan="2">
-                    <div class="inputCol">
-                      <strong class="inputLabel">휴대폰</strong>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <input type="text"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <input type="text"/>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
                       <div class="inputRow">
                         <div class="inputBox">
-                          <select>
-                            <option>010</option>
-                          </select>
+                          <input type="date"/>
                         </div>
-                        <label class="inputLabel">-</label>
+                        <label class="inputLabel">~</label>
                         <div class="inputBox">
-                          <input type="text"/>
+                          <input type="date"/>
                         </div>
-                        <label class="inputLabel">-</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <input type="text"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <input type="text"/>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="inputRow">
                         <div class="inputBox">
-                          <input type="text"/>
+                          <input type="date"/>
+                        </div>
+                        <label class="inputLabel">~</label>
+                        <div class="inputBox">
+                          <input type="date"/>
                         </div>
                       </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th><strong class="nmTitle">주소</strong></th>
-                  <td colspan="4">
-                    <div class="addressBox">
-                      <button>주소찾기</button>
-                      <input class="first" type="text"/>
-                      <input class="second" type="text"/>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th rowspan="2"><strong class="nmTitle">신체조건</strong></th>
-                  <th><strong class="nmTitle">신장</strong></th>
-                  <th><strong class="nmTitle">체중</strong></th>
-                  <th><strong class="nmTitle">시력(나안)</strong></th>
-                  <th><strong class="nmTitle">시력(교정)</strong></th>
-                  <th><strong class="nmTitle">혈액형</strong></th>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="inputRow">
+                    </td>
+                    <td>
                       <div class="inputBox">
                         <input type="text"/>
                       </div>
-                      <label class="inputLabel">cm</label>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="inputRow">
+                    </td>
+                    <td>
                       <div class="inputBox">
                         <input type="text"/>
                       </div>
-                      <label class="inputLabel">kg</label>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="inputRow">
-                      <label class="inputLabel">좌:</label>
-                      <div class="inputBox">
-                        <input type="text"/>
-                      </div>
-                      <label class="inputLabel">우:</label>
-                      <div class="inputBox">
-                        <input type="text"/>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="inputRow">
-                      <label class="inputLabel">좌:</label>
-                      <div class="inputBox">
-                        <input type="text"/>
-                      </div>
-                      <label class="inputLabel">우:</label>
-                      <div class="inputBox">
-                        <input type="text"/>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="inputBox">
-                      <select>
-                        <option>선택하세요</option>
-                      </select>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th><strong class="nmTitle">국적</strong></th>
-                  <td colspan="5">
-                    <div class="inputRow fgap">
-                      <div class="rd-type1">
-                        <input type="radio" name="country" id="contItem01">
-                        <label class="chk" for="contItem01"><i class="fa fa-check"></i></label>
-                        <label class="txt" for="contItem01">대한민국</label>
-                      </div>
-                      <div class="rd-type1">
-                        <input type="radio" name="country" id="contItem02">
-                        <label class="chk" for="contItem02"><i class="fa fa-check"></i></label>
-                        <label class="txt" for="contItem02">복수국적</label>
-                      </div>
-                      <div class="rd-type1">
-                        <input type="radio" name="country" id="contItem03">
-                        <label class="chk" for="contItem03"><i class="fa fa-check"></i></label>
-                        <label class="txt" for="contItem03">외국국적</label>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-              </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
+
             <div class="containerBox">
-              <strong class="tbTitle">▶ 병역사항 <span class="tbRed">병역사항이 있는 해당자만 입력바랍니다</span></strong>
-              <table class="rowTable">
-                <colgroup>
-                  <col width="25%">
-                  <col width="25%">
-                  <col width="25%">
-                  <col width="25%">
-                </colgroup>
-                <tr>
-                  <th><strong class="nmTitle">병역구분</strong></th>
-                  <th><strong class="nmTitle">소속</strong></th>
-                  <th><strong class="nmTitle">계급</strong></th>
-                  <th><strong class="nmTitle">전역(예정일)</strong></th>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="inputBox">
-                      <input type="text"/>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="inputBox">
-                      <input type="text"/>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="inputBox">
-                      <input type="text"/>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="inputBox">
-                      <input type="date"/>
-                    </div>
-                  </td>
-                </tr>
-              </table>
+              <strong class="tbTitle">▶ 기술자격 및 국가고시<span class="tbRed">(자격 및 면허명칭, 인정기관은 한글입력 20자로 제한됩니다)</span></strong>
+              <div class="sTableBox">
+                <table class="rowTable">
+                  <colgroup>
+                    <col width="34%">
+                    <col width="22%">
+                    <col width="22%">
+                    <col width="22%">
+                  </colgroup>
+                  <tr>
+                    <th><strong class="nmTitle">자격 및 면허명칭</strong></th>
+                    <th><strong class="nmTitle">인정기관</strong></th>
+                    <th><strong class="nmTitle">자격 및 면허번호</strong></th>
+                    <th><strong class="nmTitle">취득일자</strong></th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="inputRow">
+                        <button class="inputBtn auto">자격증선택</button>
+                        <div class="inputBox">
+                          <input type="text"/>
+                        </div>
+                        <button class="inputBtn auto red">삭제</button>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <input type="text"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <input type="text"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <input type="date"/>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="inputRow">
+                        <button class="inputBtn auto">자격증선택</button>
+                        <div class="inputBox">
+                          <input type="text"/>
+                        </div>
+                        <button class="inputBtn auto red">삭제</button>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <input type="text"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <input type="text"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <input type="date"/>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="inputRow">
+                        <button class="inputBtn auto">자격증선택</button>
+                        <div class="inputBox">
+                          <input type="text"/>
+                        </div>
+                        <button class="inputBtn auto red">삭제</button>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <input type="text"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <input type="text"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <input type="date"/>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
+
+            <div class="containerBox">
+              <strong class="tbTitle">▶ 국가유공자 가족</strong>
+              <div class="sTableBox">
+                <table class="rowTable">
+                  <colgroup>
+                    <col width="25%">
+                    <col width="75%">
+                  </colgroup>
+                  <tr>
+                    <th><strong class="nmTitle">성명</strong></th>
+                    <th><strong class="nmTitle">관계</strong></th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="inputBox">
+                        <input type="text"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="inputBox">
+                        <select>
+                          <option>선택하세요</option>
+                        </select>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            
             <div class="btnBox center">
-              <a href="sub5-1-3.html" class="btn">이전페이지</a>
-              <a href="sub5-1-5.html" class="btn Colorm Conpop">다음</a>
+              <a href="sub5-1-4.html" class="btn">이전페이지</a>
+              <a href="sub5-1-6.html" class="btn Colorm Conpop">다음</a>
             </div>
           </div>
         </div>
