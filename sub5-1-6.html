@@ -622,10 +622,33 @@
               </div>
             </div>
             
-            <div class="btnBox center">
-              <a href="sub5-1-4.html" class="btn">이전페이지</a>
-              <a href="sub5-1-6.html" class="btn Colorm Conpop">제출</a>
+             <div class="btnBox center">
+              <a href="sub5-1-5.html" class="btn">이전페이지</a>
+              <a href="#test-modal" class="btn Colorm Conpop">제출</a>
             </div>
+            <div id="test-modal" class="zoom-anim-dialog mfp-hide popupBox mx400">
+              <div class="popupTBox"><strong class="ptbTitle">제출 완료 안내</strong></div>
+              <div class="popupCont">
+                <div class="textInbox">
+                  <strong class="tbTitle center">지원서 제출이 완료되었습니다.</strong>
+                  <div class="tbInBox">
+                    <p class="tbitem center red">지원서 출력은 다음날 09:00시 『지원확인』 후</p>
+                    <p class="tbitem center red">수험표와 함께 출력해야 합니다.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="btnBox popup">
+                <a href="#." class="btn Colorb">닫기</a>
+              </div>
+            </div>
+            <script>
+              $(function () {
+                $('.Conpop').magnificPopup({
+                  type: 'inline', fixedContentPos: false, fixedBgPos: true, overflowY: 'auto', closeBtnInside: true,
+                  preloader: false, midClick: true, removalDelay: 300, mainClass: 'my-mfp-slide-bottom'
+                });
+              });
+            </script>
           </div>
         </div>
       </div>
