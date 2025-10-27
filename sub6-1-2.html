@@ -10,10 +10,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
   <link href="./css/base.css" rel="stylesheet">
   <link href="./css/design.css" rel="stylesheet">
+  <link href="./css/magnific.css" rel="stylesheet">
   <link href="./css/slick.css" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="./js/slick.js"></script>
+  <script src="./js/magnific.js"></script>
   <script src="./js/default.js"></script>
 </head>
 <body>
@@ -188,14 +190,172 @@
           </ul>
         </div>
         <div class="sub-inbox">
-          <strong class="stitle">※ 장교/부사관 합격자 조회는 해군 모병센터의 아래 화면을 이용해주세요.</strong>
+          <strong class="stitle">※ 장교/부사관 합격자 조회는 지원부문을 확인해서 정확히 입력하시기 바랍니다.</strong>
           <div class="sub-set">
-            <div class="gallBoard">
-              <a class="gbItem" href="sub6-1-2.html">
-                <div class="gbImg"><img src="images/test/board/5-1.png"/></div>
-                <strong class="gbText">장교/부사관</strong>
-              </a>
+            <div class="containerBox">
+              <strong class="tbTitle">해병대 장교/부사관 합격자 조회</strong>
+              <div class="textBox border full">
+                <div class="textInbox">
+                  <strong class="tbTitle">조회가능한 자료목록</strong>
+                  <div class="tbInBox">
+                    <p class="tbitem st">• 제127기 사관후보생 2차 합격자 발표</p>
+                    <p class="tbitem st">• 최종선발 및 발표는 8.16.(금) 예정</p>
+                    <p class="tbitem st">• 최종 선발 / 발표는 8.16.(금) 예정</p>
+                    <p class="tbitem st">• 해병대 최종합격을 축하드립니다. 모병안내문 참고바랍니다.</p>
+                    <p class="tbitem st">• 군가산복무지원금 지급 대상자(남)</p>
+                    <p class="tbitem st">• 예비장교후보생은 졸업연도 3월에 입영을 하게됩니다.</p>
+                    <p class="tbitem st">• 제379기 부사관후보생(남) 필기시험 결과</p>
+                    <p class="tbitem st">• 군 가산복무지원금 지급 대상자(여)</p>
+                    <p class="tbitem st">• 입영 월에 대한 정확한 확인은 지역별 모병관 에게 확인바랍니다.</p>
+                    <p class="tbitem st">• 1차 전형(필기시험) 결과</p>
+                    <p class="tbitem st">• 자료에 대한 설명이 없습니다.</p>
+                    <p class="tbitem st">• 제380기 부사관후보생(남)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sTableBox">
+                <table class="rowTable mw600">
+                  <colgroup>
+                    <col width="18%">
+                    <col width="32%">
+                    <col width="50%">
+                  </colgroup>
+                  <tr>
+                    <th><strong class="nmTitle">접수지구</strong></th>
+                    <td>
+                      <div class="inputBox">
+                        <select>
+                          <option>선택하세요</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td><p class="tbitem">※ 지원서 작성시 입력한 접수지구를 선택하세요.</p></td>
+                  </tr>
+                  <tr>
+                    <th><strong class="nmTitle">성명</strong></th>
+                    <td>
+                      <div class="inputBox">
+                        <input type="text"/>
+                      </div>
+                    </td>
+                    <td><p class="tbitem">※ 지원시 작성시 입력한 성명을 입력하세요.</p></td>
+                  </tr>
+                  <tr>
+                    <th><strong class="nmTitle">주민번호</strong></th>
+                    <td>
+                      <div class="inputRow">
+                        <div class="inputBox">
+                          <input type="text"/>
+                        </div>
+                        <span class="inputLabel">-</span>
+                        <div class="inputBox" style="max-width:40px;">
+                          <input type="text"/>
+                        </div>
+                      </div>
+                    </td>
+                    <td><p class="tbitem">※ 주민번호 앞자리와 뒷자리 2자만 입력하세요.</p></td>
+                  </tr>
+                  <tr>
+                    <th><strong class="nmTitle">개인인증번호</strong></th>
+                    <td>
+                      <div class="inputBox">
+                        <input type="text"/>
+                      </div>
+                    </td>
+                    <td><p class="tbitem">※ 지원서 작성시 등록한 개인인증번호를 입력하세요.</p></td>
+                  </tr>
+                  <tr>
+                    <th><strong class="nmTitle">모집부문</strong></th>
+                    <td>
+                      <div class="inputBox">
+                        <select>
+                          <option>선택하세요</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td><p class="tbitem">※ 장교/부사관 중 지원한 부문을 선택하세요.</p></td>
+                  </tr>
+                </table>
+              </div>
             </div>
+            
+            <div class="btnBox center">
+              <a href="sub6-1-3.html" class="btn Colorm">확인</a>
+              <a href="#test-modal" class="btn Conpop">개인인증번호 찾기</a>
+            </div>
+
+            <div id="test-modal" class="zoom-anim-dialog mfp-hide popupBox mx500">
+              <div class="popupTBox"><strong class="ptbTitle">개인인증번호 찾기</strong></div>
+              <div class="popupCont">
+                <div class="sTableBox">
+                  <table class="rowTable mw300">
+                    <colgroup>
+                      <col width="25%">
+                      <col width="75%">
+                    </colgroup>
+                    <tr>
+                      <th><strong class="nmTitle">성명</strong></th>
+                      <td>
+                        <div class="inputBox">
+                          <input type="text" placeholder="한글 이름을 입력하세요"/>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><strong class="nmTitle">주민번호</strong></th>
+                      <td>
+                        <div class="inputRow">
+                          <div class="inputBox">
+                            <input type="text"/>
+                          </div>
+                          <span class="inputLabel">-</span>
+                          <div class="inputBox" style="max-width:50px;">
+                            <input type="text"/>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><strong class="nmTitle">휴대폰번호</strong></th>
+                      <td>
+                        <div class="inputRow">
+                          <div class="inputBox">
+                            <input type="text"/>
+                          </div>
+                          <span class="inputLabel">-</span>
+                          <div class="inputBox">
+                            <input type="text"/>
+                          </div>
+                          <span class="inputLabel">-</span>
+                          <div class="inputBox">
+                            <input type="text"/>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th><strong class="nmTitle">모집부문</strong></th>
+                      <td>
+                        <div class="inputBox">
+                          <input type="text"/>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="btnBox popup">
+                <a href="#." class="btn Colorb">인증번호 찾기</a>
+              </div>
+            </div>
+            <script>
+              $(function () {
+                $('.Conpop').magnificPopup({
+                  type: 'inline', fixedContentPos: false, fixedBgPos: true, overflowY: 'auto', closeBtnInside: true,
+                  preloader: false, midClick: true, removalDelay: 300, mainClass: 'my-mfp-slide-bottom'
+                });
+              });
+            </script>
           </div>
         </div>
       </div>

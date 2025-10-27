@@ -368,6 +368,10 @@ body {min-width:1660px; width:100%;}
 
 .singleLink {display:flex; flex-direction:column; justify-content:center; align-items:center; font-size:0;}
 .singleLink.color {color:#0075c8; font-size:14px; font-weight:500; line-height:1.4;}
+.singleLink.st {padding-left:16px;}
+.singleLink.nd {padding-left:32px;}
+.singleLink.rd {padding-left:48px;}
+.singleLink.fd {padding-left:64px;}
 
 @media screen and (max-width:960px) {
     .sub-visual {height:150px; gap:12px;}
@@ -403,6 +407,10 @@ body {min-width:1660px; width:100%;}
     .stepBox .step .stepBar:after {width:8px; height:8px; border-radius:8px; top:0; left:calc(50% - 4px);}
 
     .singleLink.color {font-size:13px;}
+    .singleLink.st {padding-left:12px;}
+    .singleLink.nd {padding-left:24px;}
+    .singleLink.rd {padding-left:36px;}
+    .singleLink.fd {padding-left:48px;}
 }
 
 /* tab */
@@ -423,6 +431,7 @@ body {min-width:1660px; width:100%;}
 /* textbox */
 .textBox {display:flex; width:100%; flex-direction:column; justify-content:flex-start; align-items:flex-start; padding-bottom:24px; border-bottom:1px solid #e3e3e3;}
 .textBox.border {border:1px solid #e3e3e3; max-height:150px; overflow:auto; padding:20px;}
+.textBox.border.full {max-height:100%;}
 .textInbox {display:flex; width:100%; flex-direction:column; justify-content:flex-start; align-items:flex-start; gap:16px;}
 .tbTitle {display:flex; width:100%; flex-direction:row; justify-content:flex-start; align-items:flex-start; font-size:18px; color:#1d1d1d; font-weight:600; line-height:26px; gap:12px;}
 .tbTitle.big {font-size:24px;}
@@ -440,6 +449,11 @@ body {min-width:1660px; width:100%;}
 .tbTitle.center {justify-content:center; align-items:center; text-align:center;}
 .tbitem.center {justify-content:center; align-items:center; text-align:center;}
 .sbspace {display:flex; width:100%; height:16px;}
+.incBox {
+    display:flex; width:100%; flex-direction:row; justify-content:flex-start; align-items:center; text-align:left; font-size:16px; color:#333333; font-weight:400; line-height:22px;
+    word-break:keep-all; gap:4px; padding-left:12px; position:relative;
+}
+.incBox:after {content:""; display:block; width:5px; height:5px; background-color:#1d1d1d; position:absolute; top:9px; left:0; border-radius:3px;}
 
 @media screen and (max-width:960px) {
     .tabBox {gap:12px;}
@@ -464,6 +478,9 @@ body {min-width:1660px; width:100%;}
     .tbitem.rd {padding-left:36px;}
     .tbitem.fd {padding-left:48px;}
     .sbspace {height:14px;}
+
+    .incBox {padding-left:10px; font-size:13px;}
+    .incBox:after {width:4px; height:4px; top:8px;}
 }
 
 /* table */
@@ -506,6 +523,11 @@ body {min-width:1660px; width:100%;}
     .nmTable .nmth.rbg .nmTitle {color:#ffffff;}
 
     .rowTable {width:100%; min-width:860px;}
+    .rowTable.mw700 {min-width:600px;}
+    .rowTable.mw600 {min-width:600px;}
+    .rowTable.mw500 {min-width:500px;}
+    .rowTable.mw400 {min-width:400px;}
+    .rowTable.mw300 {min-width:300px;}
     .rowTable th {padding:8px;}
     .rowTable td {padding:8px;}
     .rowTable td.left {text-align:left;}
@@ -541,6 +563,7 @@ body {min-width:1660px; width:100%;}
 .nBoard td.left {text-align:left;}
 .nBoard .file {display:inline-block; width:16px;}
 .nBoard .link {max-width:0; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.nBoard .link .reple { padding-left:28px; background-image:url(../images/icon/reply.png); background-size:14px 14px; background-position:left 4px top 50%; background-repeat:no-repeat;}
 
 .nviewBox {display:flex; width:100%; flex-direction:column; justify-content:flex-start; align-items:flex-start; padding:24px; gap:24px;}
 .textArea {display:flex; width:100%; flex-direction:column; min-height:400px; justify-content:flex-start; align-items:flex-start; gap:4px; padding:0 12px;}
@@ -751,3 +774,10 @@ body {min-width:1660px; width:100%;}
 .infoot p span.Qndod span{padding-left:28px;font-size:12px;}
 .infoot p:nth-of-type(5) span.Qndod{padding-left:16px;}
 .infoot p.bot-txt{padding:24px 24px 12px;font-size:20px;letter-spacing:10px;}
+
+/* MAP */
+.mapBox {display:flex; width:100%; height:500px; position:relative; border:1px solid #e3e3e3;}
+
+@media screen and (max-width:960px) {
+    .mapBox {height:350px;}
+}
