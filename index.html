@@ -462,13 +462,13 @@
     </div>
     <div id="quick_menu">
       <button id="btn_top" style="display: none;">
-          <span class="icon"><img src="images/base/top.png"/></span>
-          <span class="text">위로</span>
+        <span class="icon"><img src="images/base/top.png"/></span>
+        <span class="text">위로</span>
       </button>
-      <a id="btn_chatbot" href="#test-modal" class="Conpop">
-          <span class="icon"><img src="images/base/bot.png"/></span>
-          <span class="text">해병대<br/><span class="color">Q&A</span></span>
-      </a>
+      <button id="btn_chatbot">
+        <span class="icon"><img src="images/base/bot.png"/></span>
+        <span class="text">해병대<br/><span class="color">Q&A</span></span>
+      </button>
     </div>
   </footer>
   <div id="test-modal" class="zoom-anim-dialog mfp-hide popupBox mx1000">
@@ -493,6 +493,25 @@
       </div>
     </div>
   </div>
+  <div class="chatbotBox">
+    <strong class="chbTitle">안녕하세요. 궁금하신 내용을 선택하세요.</strong>
+    <button class="chbClose"><i class="fa fa-close"></i></button>
+    <ul class="chbList">
+      <li class="chbItem"><a href="#.">장교</a></li>
+      <li class="chbItem"><a href="#.">부사관</a></li>
+      <li class="chbItem"><a href="#.">병</a></li>
+      <li class="chbItem"><a href="#.">군무원</a></li>
+      <li class="chbItem"><a href="#.">지원서작성</a></li>
+      <li class="chbItem"><a href="#.">합격자조회</a></li>
+      <li class="chbItem"><a href="#.">해병대캠프</a></li>
+      <li class="chbItem"><a href="#.">질문및답변</a></li>
+    </ul>
+    <div class="chbBtnBox">
+      <button><i class="fa fa-angle-left"></i></button>
+      <button><i class="fa fa-home"></i></button>
+      <button><i class="fa fa-angle-right"></i></button>
+    </div>
+  </div>
   <script>
     $(window).on('load', function() {
       $.magnificPopup.open({
@@ -501,13 +520,21 @@
           type: 'inline'
         },
         fixedContentPos: false, fixedBgPos: true, overflowY: 'auto', closeBtnInside: true,
-        preloader: false, midClick: true, removalDelay: 300, mainClass: 'my-mfp-slide-bottom',
+        preloader: false, midClick: true, removalDelay: 300, mainClass: 'mfp-fade',
       });
     });
     $(document).on('click', '.popclose', function (e) {
       e.preventDefault();
       $.magnificPopup.close();
     });
+
+    $('#btn_chatbot').click(function(){
+      $('.chatbotBox').toggleClass('active');
+    })
+    
+    $('.chbClose').click(function(){
+      $('.chatbotBox').removeClass('active');
+    })
   </script>
 </body>
 </html>
