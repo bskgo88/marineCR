@@ -10,10 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
   <link href="./css/base.css" rel="stylesheet">
   <link href="./css/design.css" rel="stylesheet">
+  <link href="./css/magnific.css" rel="stylesheet">
   <link href="./css/slick.css" rel="stylesheet">
+  <link href="./css/font-awesome.css" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="./js/slick.js"></script>
+  <script src="./js/magnific.js"></script>
   <script src="./js/default.js"></script>
 </head>
 <body>
@@ -462,11 +465,49 @@
           <span class="icon"><img src="images/base/top.png"/></span>
           <span class="text">위로</span>
       </button>
-      <button id="btn_chatbot">
+      <a id="btn_chatbot" href="#test-modal" class="Conpop">
           <span class="icon"><img src="images/base/bot.png"/></span>
-          <span class="text">해병대<br/><span class="color">챗봇</span></span>
-      </button>
+          <span class="text">해병대<br/><span class="color">Q&A</span></span>
+      </a>
     </div>
   </footer>
+  <div id="test-modal" class="zoom-anim-dialog mfp-hide popupBox mx1000">
+    <div class="popupTBox"><strong class="ptbTitle">대한민국 해병대</strong></div>
+    <div class="mainpopBox">
+      <div class="mainPCont">
+        <div class="mpcCont"></div>
+        <div class="mpcCont"></div>
+        <div class="mpcCont"></div>
+        <div class="mpcCont"></div>
+        <div class="mpcCont"></div>
+      </div>
+    </div>
+    <div class="btnBox popup">
+      <div class="btnRight">
+        <div class="rd-type1">
+            <input type="checkbox" id="agreeTo1_Y" value="Y">
+            <label class="chk" for="agreeTo1_Y"><i class="fa fa-check"></i></label>
+            <label class="txt" for="agreeTo1_Y">오늘하루보지 않기</label>
+          </div>
+        <a href="#." class="btn popclose">닫기</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(window).on('load', function() {
+      $.magnificPopup.open({
+        items: {
+          src: '#test-modal',
+          type: 'inline'
+        },
+        fixedContentPos: false, fixedBgPos: true, overflowY: 'auto', closeBtnInside: true,
+        preloader: false, midClick: true, removalDelay: 300, mainClass: 'my-mfp-slide-bottom',
+      });
+    });
+    $(document).on('click', '.popclose', function (e) {
+      e.preventDefault();
+      $.magnificPopup.close();
+    });
+  </script>
 </body>
 </html>
