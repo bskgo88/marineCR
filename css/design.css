@@ -660,6 +660,7 @@ body {min-width:1660px; width:100%;}
 }
 .btnBox .btn.Colorm {background-color:#a80000; color:#FFFFFF;}
 .btnBox .btn.Colorb {background-color:#1d1d1d; color:#FFFFFF;}
+.btnBox .btn.Coloru {background-color:#4472C4; color:#FFFFFF;}
 
 .check-cont {display:flex; width:100%; flex-direction:row; justify-content:flex-end; align-items:center; gap:24px;}
 .rd-type1 {display:flex; flex-direction:row; justify-content:flex-start; align-items:center; position:relative; padding-left:28px;}
