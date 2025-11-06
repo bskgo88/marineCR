@@ -113,7 +113,7 @@ body {min-width:1660px; width:100%;}
 .search-area {display:flex; flex-direction:row; justify-content:center; align-items:center; width:100%; max-width:1920px; padding:80px 58px 0; background-color:#FFFFFF;}
 .search-area input {display:inline-flex; flex:1 1 calc(100% - 160px); height:75px; border:1px solid #747474; padding:0 40px; font-size:20px; color:#1d1d1d; font-weight:400; outline:none;}
 .search-area input::placeholder {color:#1d1d1d; font-weight:400;}
-.search-area button {
+.search-area .sbtn {
     display:inline-flex; flex:1 1 160px; height:75px; background-color:#a80000; justify-content:center; align-items:center; color:#FFFFFF; font-size:20px; font-weight:500; gap:8px;
     outline:none; border:none;
 }
@@ -128,13 +128,13 @@ body {min-width:1660px; width:100%;}
     /* 검색창 영역 */
     .search-area {padding:24px 16px 0; background-color:#FFFFFF;}
     .search-area input {width:calc(100% - 80px); height:50px; padding:0 12px; font-size:14px;}
-    .search-area button {max-width:80px; flex:1 1 60px; height:50px; font-size:14px; font-weight:500; gap:8px;}
-    .search-area button img {height:16px;}
+    .search-area .sbtn {max-width:80px; flex:1 1 60px; height:50px; font-size:14px; font-weight:500; gap:8px;}
+    .search-area .sbtn img {height:16px;}
 }
 
 /* ============================================== */
 /* 3. Quick Links 및 Board Section */
-/* ============================================== */
+/* ========================================++++===== */
 
 /* 퀵 링크 그리드 */
 .quick-links {display:flex; flex-direction:row; justify-content:center; align-items:stretch; gap:90px; padding:80px 58px; background-color:#FFFFFF;}
@@ -372,6 +372,10 @@ body {min-width:1660px; width:100%;}
 .singleLink.nd {padding-left:32px;}
 .singleLink.rd {padding-left:48px;}
 .singleLink.fd {padding-left:64px;}
+
+.singBox {display:flex; width:100%; flex-direction:column; justify-content:flex-start; align-items:flex-start; gap:24px;}
+.singBox .search-area {padding:0;}
+.spaceLine {display:flex; width:100%; height:2px; background-color:#a80000; margin:24px 0;}
 
 @media screen and (max-width:960px) {
     .sub-visual {height:150px; gap:12px;}
