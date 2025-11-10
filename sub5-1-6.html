@@ -536,8 +536,7 @@
                           <input type="text"/>
                         </div>
                         <div class="imgupBtn">
-                          <input type="file" id="files1"/>
-                          <label for="files1">업로드</label>
+                          <a href="#file-modal" class="IupBtn Filepop">등록</a>
                         </div>
                       </div>
                     </td>
@@ -626,6 +625,7 @@
               <a href="sub5-1-5.html" class="btn">이전페이지</a>
               <a href="#test-modal" class="btn Colorm Conpop">제출</a>
             </div>
+
             <div id="test-modal" class="zoom-anim-dialog mfp-hide popupBox mx400">
               <div class="popupTBox"><strong class="ptbTitle">제출 완료 안내</strong></div>
               <div class="popupCont">
@@ -641,9 +641,66 @@
                 <a href="#." class="btn Colorb">닫기</a>
               </div>
             </div>
+
+            <div id="file-modal" class="zoom-anim-dialog mfp-hide popupBox mx600">
+              <div class="popupTBox"><strong class="ptbTitle">파일 선택 <span class="tbColor">(최대 10개까지)</span></strong></div>
+              <div class="popupCont">
+                <div class="fileUpList">
+                  <div class="fulItem">
+                    <div class="fulItemIn"><img src="images/test/board/1-1.png"></div>
+                  </div>
+                  <div class="fulItem">
+                    <label for="files02"><i class="fa fa-folder-open"></i></label>
+                    <input id="files02" type="file" />
+                  </div>
+                  <div class="fulItem">
+                    <label for="files03"><i class="fa fa-folder-open"></i></label>
+                    <input id="files03" type="file" />
+                  </div>
+                  <div class="fulItem">
+                    <label for="files04"><i class="fa fa-folder-open"></i></label>
+                    <input id="files04" type="file" />
+                  </div>
+                  <div class="fulItem">
+                    <label for="files05"><i class="fa fa-folder-open"></i></label>
+                    <input id="files05" type="file" />
+                  </div>
+                  <div class="fulItem">
+                    <label for="files06"><i class="fa fa-folder-open"></i></label>
+                    <input id="files06" type="file" />
+                  </div>
+                  <div class="fulItem">
+                    <label for="files07"><i class="fa fa-folder-open"></i></label>
+                    <input id="files07" type="file" />
+                  </div>
+                  <div class="fulItem">
+                    <label for="files08"><i class="fa fa-folder-open"></i></label>
+                    <input id="files08" type="file" />
+                  </div>
+                  <div class="fulItem">
+                    <label for="files09"><i class="fa fa-folder-open"></i></label>
+                    <input id="files09" type="file" />
+                  </div>
+                  <div class="fulItem">
+                    <label for="files10"><i class="fa fa-folder-open"></i></label>
+                    <input id="files10" type="file" />
+                  </div>
+                </div>
+              </div>
+              <div class="btnBox popup">
+                <a href="#." class="btn">취소</a>
+                <a href="#." class="btn Colorb">선택완료</a>
+              </div>
+            </div>
+
             <script>
               $(function () {
                 $('.Conpop').magnificPopup({
+                  type: 'inline', fixedContentPos: false, fixedBgPos: true, overflowY: 'auto', closeBtnInside: true,
+                  preloader: false, midClick: true, removalDelay: 300, mainClass: 'my-mfp-slide-bottom'
+                });
+
+                $('.Filepop').magnificPopup({
                   type: 'inline', fixedContentPos: false, fixedBgPos: true, overflowY: 'auto', closeBtnInside: true,
                   preloader: false, midClick: true, removalDelay: 300, mainClass: 'my-mfp-slide-bottom'
                 });
