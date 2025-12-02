@@ -577,7 +577,9 @@ body {min-width:1660px; width:100%;}
 .nBoard .link .reple { padding-left:28px; background-image:url(../images/icon/reply.png); background-size:14px 14px; background-position:left 4px top 50%; background-repeat:no-repeat;}
 
 .nviewBox {display:flex; width:100%; flex-direction:column; justify-content:flex-start; align-items:flex-start; padding:24px; gap:24px;}
-.textArea {display:flex; width:100%; flex-direction:column; min-height:400px; justify-content:flex-start; align-items:flex-start; gap:4px; padding:0 12px;}
+.textArea {display:flex; width:100%; flex-direction:column; min-height:400px; justify-content:flex-start; align-items:flex-start; gap:4px; padding:0 12px; outline:none; resize:horizontal;}
+textarea.textArea {padding:12px; font-size:14px; line-height:1.4; color:#333333; font-weight:400; border-radius:0;}
+textarea.textArea:focus {border:1px solid #a80000;}
 .multyFile {display:flex; width:100%; flex-direction:column; gap:4px;}
 .nbdDown {display:inline-flex; flex-direction:row; justify-content:flex-start; align-items:center; gap:4px;}
 .nbdDown .file {display:inline-block; width:16px;}
